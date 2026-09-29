@@ -140,6 +140,13 @@ document.querySelectorAll('[data-copy]').forEach(button => {
 
 // Reveal once the project images are decoded and the fan is in view.
 const projectFan = document.querySelector('.hero-media-svg');
+const serviceDisclosures = [...document.querySelectorAll('.category-offers-disclosure')];
+if (serviceDisclosures.length) {
+  const compactServices = matchMedia('(max-width: 760px)');
+  const setServiceDensity = () => serviceDisclosures.forEach(details => { details.open = !compactServices.matches; });
+  setServiceDensity();
+  compactServices.addEventListener('change', setServiceDensity);
+}
 if (projectFan) {
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const hub = projectFan.querySelector('.hero-fan-hub');
