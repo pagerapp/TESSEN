@@ -25,6 +25,7 @@
 .svc-route-bottom{position:relative;z-index:1;display:grid;grid-template-rows:auto minmax(3.1em,auto) auto;align-items:start;row-gap:9px;width:100%}
 .svc-route strong{font:700 clamp(27px,2.05vw,37px)/.95 'Cormorant SC',Georgia,serif;text-transform:uppercase;letter-spacing:-.025em;overflow-wrap:anywhere;hyphens:auto;hyphenate-limit-chars:8 8 5;text-wrap:balance}
 .svc-route small{font-size:clamp(13px,.94vw,16px);line-height:1.42;color:#cdc5c9;max-width:310px}
+.svc-route-short{display:none}
 .svc-route-price{display:flex;align-items:center;justify-content:space-between;width:100%;font-size:clamp(14px,1.05vw,17px);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
 .svc-route-price span{color:#f06184;font-size:22px;margin-left:12px;font-weight:400}
 
@@ -114,15 +115,16 @@
   .svc-hero-idea{width:94px;top:16px;right:16px}
   .svc-hero-copy h1{font-size:clamp(40px,10.8vw,62px);line-height:.9;margin-bottom:20px}
   .svc-hero-copy p{font-size:17px;max-width:550px}
-  .svc-routes{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:auto;gap:10px}
-  .svc-route{display:flex;flex-direction:column;align-items:stretch;min-height:150px;padding:17px 19px}
+  .svc-routes{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,auto);grid-auto-rows:auto;gap:10px}
+  .svc-route{display:flex;flex-direction:column;align-items:stretch;min-height:clamp(218px,30vw,245px);padding:17px}
   .svc-route-id{font-size:9px;white-space:nowrap}
-  .svc-route-icon{width:60px;top:10px;right:14px}
-  .svc-route-bottom{display:grid;grid-template-rows:auto auto auto;gap:6px;margin-top:45px}
-  .svc-route strong{font-size:clamp(29px,7vw,39px);line-height:.93}
-  .svc-route small{font-size:12px;line-height:1.35}
-  .svc-route-price{font-size:12px;padding-top:5px}
-  .svc-route-price span{font-size:18px;margin-left:8px}
+  .svc-route-icon{width:clamp(56px,12vw,82px);top:11px;right:11px;opacity:1;filter:brightness(1.27) contrast(1.06) drop-shadow(0 8px 15px #eb17403d)}
+  .svc-route-bottom{display:grid;grid-template-rows:auto auto auto;align-content:end;gap:7px;margin-top:auto}
+  .svc-route strong{font-size:clamp(22px,5vw,31px);line-height:.91;letter-spacing:-.025em}
+  .svc-route .svc-route-detail{display:none}
+  .svc-route .svc-route-short{display:block;font-size:clamp(11px,1.7vw,13px);line-height:1.32;min-height:2.6em}
+  .svc-route-price{font-size:clamp(11px,1.6vw,13px);padding-top:7px;border-top:1px solid #ffffff24}
+  .svc-route-price span{font-size:17px;margin-left:4px}
   .svc-web-section{padding-top:65px}
   .svc-section-heading{display:block;margin-bottom:45px}
   .svc-section-heading .micro{display:block;margin-bottom:22px}
@@ -167,13 +169,13 @@
   .svc-web-offer>.svc-price,.svc-offer .svc-price{font-size:14px}
   .svc-web-main h3{font-size:30px}
   .svc-offer-copy h3{font-size:27px}
-  .svc-route{padding:15px}
-  .svc-route strong{font-size:29px}
+  .svc-route{padding:14px}
+  .svc-route strong{font-size:22px}
   .svc-route-price{font-size:11px}
   .svc-category#automation h2{font-size:34px}
   .svc-extras h2{font-size:31px}
   .svc-extras .extras-row strong{white-space:normal;overflow-wrap:anywhere}
   .svc-case-copy strong{font-size:36px}
 }
-@media(max-width:350px){.svc-route{padding:13px}.svc-route-icon{width:55px;top:8px;right:10px}.svc-route strong{font-size:26px}.svc-route small{font-size:11px}}
+@media(max-width:350px){.svc-routes{gap:8px}.svc-route{padding:12px;min-height:224px}.svc-route-icon{width:52px;top:8px;right:8px}.svc-route strong{font-size:20px}.svc-route .svc-route-short{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.svc-route,.svc-route-icon,.svc-case-media img,.svc-web-details summary span{transition:none}}
