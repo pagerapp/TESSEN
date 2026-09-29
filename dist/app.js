@@ -147,6 +147,27 @@ if (serviceDisclosures.length) {
   setServiceDensity();
   compactServices.addEventListener('change', setServiceDensity);
 }
+document.querySelectorAll('[data-concept-carousel]').forEach(carousel => {
+  const track = carousel.querySelector('.concept-offer-track');
+  const previous = carousel.querySelector('[data-concept-prev]');
+  const next = carousel.querySelector('[data-concept-next]');
+  if (!previous || !next) return;
+  const update = () => {
+    previous.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+  };
+  const move = direction => {
+    const card = track.querySelector('.concept-offer');
+    if (!card) return;
+    const gap = Number.parseFloat(getComputedStyle(track).columnGap) || 0;
+    track.scrollBy({ left: direction * (card.getBoundingClientRect().width + gap), behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  };
+  previous.addEventListener('click', () => move(-1));
+  next.addEventListener('click', () => move(1));
+  track.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+});
 if (projectFan) {
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
   const hub = projectFan.querySelector('.hero-fan-hub');
