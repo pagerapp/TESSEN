@@ -2,6 +2,7 @@ node_modules/
 .DS_Store
 .playwright-mcp/
 previews/
+pages-dist/
 
 # Unused local source drafts; the current site assets remain tracked.
 Assets/Pager/
