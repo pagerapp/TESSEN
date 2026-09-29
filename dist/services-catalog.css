@@ -12,6 +12,7 @@
 .svc-hero-copy{display:flex;flex-direction:column;justify-content:space-between;min-width:0;padding:clamp(25px,3.5vw,56px)}
 .svc-hero-copy{background:linear-gradient(145deg,#151215bd,#09090bdf 78%)}
 .svc-hero-top{color:#d8cdd1;letter-spacing:.18em;font-weight:600}
+.svc-hero-idea{position:absolute;z-index:0;top:clamp(20px,3vw,48px);right:clamp(20px,3vw,48px);width:clamp(140px,12vw,210px);height:auto;aspect-ratio:1;object-fit:contain;pointer-events:none;filter:drop-shadow(0 14px 30px #ed174536)}
 .svc-hero-copy-bottom{position:relative;z-index:1}
 .svc-hero-copy h1{font-size:clamp(61px,6.2vw,110px);line-height:.82;letter-spacing:-.045em;margin:0 0 clamp(26px,2.6vw,42px);max-width:680px;text-transform:uppercase;text-wrap:balance}
 .svc-hero-copy p{font-size:clamp(17px,1.3vw,22px);line-height:1.48;max-width:510px;margin:0;color:#dcd5d8;text-wrap:pretty}
@@ -110,6 +111,7 @@
   .svc-hero-logo.kinetic-scene{inset:-4% -35% -4% -26%;opacity:.59}
   .svc-hero-copy{min-height:285px;padding:22px}
   .svc-hero-top{font-size:9px}
+  .svc-hero-idea{width:94px;top:16px;right:16px}
   .svc-hero-copy h1{font-size:clamp(40px,10.8vw,62px);line-height:.9;margin-bottom:20px}
   .svc-hero-copy p{font-size:17px;max-width:550px}
   .svc-routes{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:auto;gap:10px}
@@ -161,6 +163,7 @@
 }
 @media(max-width:390px){
   .svc-hero-copy h1{font-size:clamp(38px,10.4vw,45px)}
+  .svc-hero-idea{width:78px;top:14px;right:14px}
   .svc-web-offer>.svc-price,.svc-offer .svc-price{font-size:14px}
   .svc-web-main h3{font-size:30px}
   .svc-offer-copy h3{font-size:27px}
