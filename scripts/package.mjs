@@ -4,7 +4,7 @@ import { join } from 'node:path';
 const output = 'dist';
 rmSync(output, { recursive: true, force: true });
 mkdirSync(join(output, 'Assets/Logo'), { recursive: true });
-for (const file of ['index.html', 'style.css', 'services-concept.css', 'app.js', 'kinetic-logo.js', 'favicon.svg', 'robots.txt']) cpSync(file, join(output, file));
+for (const file of ['index.html', 'style.css', 'services-catalog.css', 'services-concept.css', 'app.js', 'kinetic-logo.js', 'favicon.svg', 'robots.txt']) cpSync(file, join(output, file));
 for (const folder of ['work', 'services', 'services-concept', 'about', 'contact', 'en', 'zh', 'media', 'fonts']) cpSync(folder, join(output, folder), { recursive: true });
 for (const file of ['icon_4.webp', 'tessen_wordmark_accent.webp', 'tessen_wordmark_white.webp', 'fan.svg']) cpSync(join('Assets/Logo', file), join(output, 'Assets/Logo', file));
 if (existsSync('sitemap.xml')) cpSync('sitemap.xml', join(output, 'sitemap.xml'));
