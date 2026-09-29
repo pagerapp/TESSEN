@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+.playwright-mcp/
+previews/
+
+# Unused local source drafts; the current site assets remain tracked.
+Assets/Pager/
+Assets/Media/about.webp
+Assets/WEB/tessen_logo.png
+Assets/Logo/icon.webp
+Assets/Logo/icon_2.webp
+Assets/Logo/icon_3.webp
+Assets/Logo/tessen_logo_2.webp
+Assets/Logo/tessent_logo.webp
+Assets/Logo/Main veer/*.webp
+Assets/Logo/Main veer/NEW V2/*.webp

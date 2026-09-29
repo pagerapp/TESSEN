@@ -1,0 +1,13 @@
+{
+  "name": "tessen-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/media.mjs && node scripts/favicon.mjs && node site.mjs && node scripts/package.mjs",
+    "dev": "npm run build && node scripts/server.mjs",
+    "check": "node --check site.mjs && node --check app.js && node --check kinetic-logo.js && node scripts/check-site.mjs"
+  },
+  "dependencies": {
+    "three": "0.185.0"
+  }
+}

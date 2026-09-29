@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="fan-title">
+  <title id="fan-title">Знак TESSEN — веер</title>
+  <defs>
+    <clipPath id="fan-reveal-left-lower" clipPathUnits="userSpaceOnUse"><rect class="fan-reveal fan-reveal-lower" x="32" y="-48" width="221" height="98" transform="translate(256 365.5) rotate(-177.267)" style="--reveal-width:221px"/></clipPath>
+    <clipPath id="fan-reveal-left-outer" clipPathUnits="userSpaceOnUse"><rect class="fan-reveal fan-reveal-outer" x="32" y="-49" width="235" height="100" transform="translate(256 365.5) rotate(-152.540)" style="--reveal-width:235px"/></clipPath>
+    <clipPath id="fan-reveal-left-middle" clipPathUnits="userSpaceOnUse"><rect class="fan-reveal fan-reveal-middle" x="33" y="-50" width="234" height="103" transform="translate(256 365.5) rotate(-127.557)" style="--reveal-width:234px"/></clipPath>
+    <clipPath id="fan-reveal-left-inner" clipPathUnits="userSpaceOnUse"><rect class="fan-reveal fan-reveal-inner" x="33" y="-47" width="225" height="96" transform="translate(256 365.5) rotate(-102.218)" style="--reveal-width:225px"/></clipPath>
+    <clipPath id="fan-reveal-right-inner" clipPathUnits="userSpaceOnUse"><rect class="fan-reveal fan-reveal-inner" x="33" y="-49" width="225" height="97" transform="translate(256 365.5) rotate(-78.063)" style="--reveal-width:225px"/></clipPath>
+    <clipPath id="fan-reveal-right-middle" clipPathUnits="userSpaceOnUse"><rect class="fan-reveal fan-reveal-middle" x="34" y="-52" width="232" height="103" transform="translate(256 365.5) rotate(-52.633)" style="--reveal-width:232px"/></clipPath>
+    <clipPath id="fan-reveal-right-outer" clipPathUnits="userSpaceOnUse"><rect class="fan-reveal fan-reveal-outer" x="33" y="-51" width="233" height="100" transform="translate(256 365.5) rotate(-27.572)" style="--reveal-width:233px"/></clipPath>
+    <clipPath id="fan-reveal-right-lower" clipPathUnits="userSpaceOnUse"><rect class="fan-reveal fan-reveal-lower" x="33" y="-50" width="219" height="98" transform="translate(256 365.5) rotate(-2.745)" style="--reveal-width:219px"/></clipPath>
+    <clipPath id="fan-reveal-left" clipPathUnits="userSpaceOnUse"><rect class="fan-reveal fan-reveal-detail" x="41" y="-10" width="111" height="21" transform="translate(256 365.5) rotate(166.904)" style="--reveal-width:111px"/></clipPath>
+    <clipPath id="fan-reveal-right" clipPathUnits="userSpaceOnUse"><rect class="fan-reveal fan-reveal-detail" x="40" y="-11" width="111" height="21" transform="translate(256 365.5) rotate(13.193)" style="--reveal-width:111px"/></clipPath>
+    <clipPath id="fan-reveal-diamond" clipPathUnits="userSpaceOnUse"><circle class="fan-diamond-reveal" cx="256" cy="365.5" r="330"/></clipPath>
+  </defs>
+  <rect width="512" height="512" fill="#0a0a0a"/>
+  <g class="fan-outline" opacity="0" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path class="fan-trace fan-trace-left-lower" style="--trace-length:515" d="M21,312 22,309 23,309 218,364 219,365 219,366 217,367 9,397 6,397Z"/>
+    <path class="fan-trace fan-trace-left-outer" style="--trace-length:542" d="M3,283 58,210 222,349 222,351 4,285Z"/>
+    <path class="fan-trace fan-trace-left-middle" style="--trace-length:546" d="M60,185 143,139 232,337 231,337 60,186Z"/>
+    <path class="fan-trace fan-trace-left-inner" style="--trace-length:517" d="M164,141 246,108 246,329Z"/>
+    <path class="fan-trace fan-trace-right-inner" style="--trace-length:518" d="M265,108 347,141 347,143 265,329Z"/>
+    <path class="fan-trace fan-trace-right-middle" style="--trace-length:543" d="M281,332 369,139 451,185 451,186 444,193 283,335 280,336Z"/>
+    <path class="fan-trace fan-trace-right-outer" style="--trace-length:540" d="M290,349 295,344 453,210 454,210 509,284 293,350 291,350Z"/>
+    <path class="fan-trace fan-trace-right-lower" style="--trace-length:513" d="M294,364 488,309 489,309 490,310 505,395 505,397 502,397 294,367Z"/>
+    <path class="fan-trace fan-trace-detail" style="--trace-length:212" d="M213,377 114,405 120,392 123,390Z"/>
+    <path class="fan-trace fan-trace-detail" style="--trace-length:212" d="M299,377 389,390 394,395 398,405Z"/>
+  </g>
+  <path class="fan-diamond-outline" opacity="0" fill="none" stroke="#ee1349" stroke-width="1.5" stroke-linejoin="round" d="M253,345 Q256,342 259,345 L277,362.5 Q280,365.5 277,368.5 L259,386 Q256,389 253,386 L235,368.5 Q232,365.5 235,362.5Z"/>
+  <g class="fan-fill" fill="#fff">
+    <path id="fan-left-lower" clip-path="url(#fan-reveal-left-lower)" d="M21,312 22,309 23,309 218,364 219,365 219,366 217,367 9,397 6,397Z"/>
+    <path id="fan-left-outer" clip-path="url(#fan-reveal-left-outer)" d="M3,283 58,210 222,349 222,351 4,285Z"/>
+    <path id="fan-left-middle" clip-path="url(#fan-reveal-left-middle)" d="M60,185 143,139 232,337 231,337 60,186Z"/>
+    <path id="fan-left-inner" clip-path="url(#fan-reveal-left-inner)" d="M164,141 246,108 246,329Z"/>
+    <path id="fan-right-inner" clip-path="url(#fan-reveal-right-inner)" d="M265,108 347,141 347,143 265,329Z"/>
+    <path id="fan-right-middle" clip-path="url(#fan-reveal-right-middle)" d="M281,332 369,139 451,185 451,186 444,193 283,335 280,336Z"/>
+    <path id="fan-right-outer" clip-path="url(#fan-reveal-right-outer)" d="M290,349 295,344 453,210 454,210 509,284 293,350 291,350Z"/>
+    <path id="fan-right-lower" clip-path="url(#fan-reveal-right-lower)" d="M294,364 488,309 489,309 490,310 505,395 505,397 502,397 294,367Z"/>
+    <path id="fan-detail-left" clip-path="url(#fan-reveal-left)" d="M213,377 114,405 120,392 123,390Z"/>
+    <path id="fan-detail-right" clip-path="url(#fan-reveal-right)" d="M299,377 389,390 394,395 398,405Z"/>
+  </g>
+  <path class="fan-diamond" fill="#ee1349" clip-path="url(#fan-reveal-diamond)" d="M253,345 Q256,342 259,345 L277,362.5 Q280,365.5 277,368.5 L259,386 Q256,389 253,386 L235,368.5 Q232,365.5 235,362.5Z"/>
+</svg>

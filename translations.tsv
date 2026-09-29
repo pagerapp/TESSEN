@@ -1,0 +1,404 @@
+# Russian source → English → Simplified Chinese. Each row has three tab-separated fields.
+00 / ОСНОВАТЕЛЬ	00 / FOUNDER	00 / 创始人
+01 / ОБЗОР	01 / OVERVIEW	01 / 项目概览
+01 / ПОДХОД	01 / APPROACH	01 / 工作方式
+02 / ОБЪЁМ РАБОТ	02 / SCOPE OF WORK	02 / 工作范围
+03 / ПОДХОД	03 / APPROACH	03 / 工作方式
+03 ПРОЕКТА / 2026	03 PROJECTS / 2026	03 个项目 / 2026
+04 / РЕЗУЛЬТАТ	04 / OUTCOME	04 / 项目成果
+Digital product · Сайт · Визуальная система	Digital product · Website · Visual system	数字产品 · 网站 · 视觉系统
+PAGER исследует идею нескольких пространств общения внутри одного аккаунта. Материалы показывают продуктовую логику через сайт, интерфейсные сцены и мобильные композиции.	PAGER explores how one account can hold several distinct spaces for conversation. The website, interface scenes and mobile compositions make the product logic clear.	PAGER 探索一个账号容纳多个独立交流空间的可能。网站、界面场景与移动端画面共同呈现产品逻辑。
+PAGER — Цифровой продукт и система его представления	PAGER — A digital product and its visual story	PAGER — 数字产品及其视觉呈现
+PAGER: Адаптация для мобильного просмотра	PAGER: Mobile adaptation	PAGER：移动端适配
+PAGER: Детали цифровой презентации	PAGER: Details of the digital presentation	PAGER：数字展示细节
+PAGER: Модульная система экранов	PAGER: Modular screen system	PAGER：模块化界面系统
+PAGER: Первый экран / идея нескольких профилей	PAGER: Opening screen / multiple profiles	PAGER：首页 / 多重身份概念
+PAGER: Продукт и визуальный язык	PAGER: Product and visual language	PAGER：产品与视觉语言
+PAGER: Развитие продуктового сценария	PAGER: Developing the product journey	PAGER：产品体验流程
+PAGER: Цифровой продукт и система его представления. Кейс TESSEN — Digital product · Сайт · Визуальная система.	PAGER: a digital product and its visual story. A TESSEN project — digital product, website and visual system.	PAGER：数字产品及其视觉呈现。TESSEN 项目，涵盖数字产品、网站与视觉系统。
+PAGER: цифровой продукт и система его представления	PAGER: a digital product and its visual story	PAGER：数字产品及其视觉呈现
+QUEST HERO — Сайт для мира приключений	QUEST HERO — A website for a world of adventure	QUEST HERO — 探索冒险世界的网站
+QUEST HERO — сайт о квестах, мастер-классах и событиях. Материалы показывают несколько направлений и детальные страницы отдельных программ.	QUEST HERO brings quests, workshops and events together online. The work covers several categories and detailed pages for individual experiences.	QUEST HERO 将密室游戏、工作坊与活动汇集在线上。项目展示多个业务方向以及各项活动的详情页。
+QUEST HERO: Детальная страница / визуальная подача	QUEST HERO: Detail page / visual presentation	QUEST HERO：详情页 / 视觉呈现
+QUEST HERO: Другие страницы проекта	QUEST HERO: Other project pages	QUEST HERO：项目其他页面
+QUEST HERO: Информационные блоки	QUEST HERO: Information sections	QUEST HERO：信息模块
+QUEST HERO: Программа / первый экран	QUEST HERO: Experience / opening screen	QUEST HERO：活动项目 / 首屏
+QUEST HERO: Разделы сайта	QUEST HERO: Website sections	QUEST HERO：网站栏目
+QUEST HERO: Сайт для мира приключений. Кейс TESSEN — Сайт · Структура · Адаптивный интерфейс.	QUEST HERO: a website for a world of adventure. A TESSEN project — website, information architecture and responsive interface.	QUEST HERO：探索冒险世界的网站。TESSEN 项目，涵盖网站、信息架构与响应式界面。
+QUEST HERO: Содержание и детали программы	QUEST HERO: Experience content and details	QUEST HERO：活动内容与详情
+QUEST HERO: сайт для мира приключений	QUEST HERO: a website for a world of adventure	QUEST HERO：探索冒险世界的网站
+QUESTCENTER — Платформа поиска и бронирования квестов	QUESTCENTER — A platform for finding and booking quests	QUESTCENTER — 密室游戏搜索与预订平台
+QUESTCENTER — платформа, где выбор квеста превращается в понятный маршрут: от первого просмотра каталога до выбора даты и времени.	QUESTCENTER turns finding a quest into a clear journey, from browsing the catalogue to choosing a date and time.	QUESTCENTER 让寻找密室游戏变得清晰顺畅：从浏览目录到选择日期和时间，每一步都有明确路径。
+QUESTCENTER: Бронирование / дата и время	QUESTCENTER: Booking / date and time	QUESTCENTER：预订 / 日期与时间
+QUESTCENTER: Карточка квеста / содержание и действие	QUESTCENTER: Quest page / content and action	QUESTCENTER：项目详情 / 内容与操作
+QUESTCENTER: Каталог / акции и тематические подборки	QUESTCENTER: Catalogue / offers and curated collections	QUESTCENTER：目录 / 优惠与主题精选
+QUESTCENTER: Каталог / сценарий выбора	QUESTCENTER: Catalogue / selection journey	QUESTCENTER：目录 / 选择流程
+QUESTCENTER: Мобильные экраны / ключевые сценарии	QUESTCENTER: Mobile screens / key journeys	QUESTCENTER：移动端界面 / 核心流程
+QUESTCENTER: Платформа поиска и бронирования квестов. Кейс TESSEN — UX/UI · Платформа бронирования · Айдентика.	QUESTCENTER: a platform for finding and booking quests. A TESSEN project — UX/UI, booking platform and visual identity.	QUESTCENTER：密室游戏搜索与预订平台。TESSEN 项目，涵盖 UX/UI、预订平台与品牌视觉。
+QUESTCENTER: платформа поиска и бронирования квестов	QUESTCENTER: a platform for finding and booking quests	QUESTCENTER：密室游戏搜索与预订平台
+TESSEN / СТУДИЯ	TESSEN / STUDIO	TESSEN / 设计工作室
+TESSEN — Бренды, сайты и визуальный контент	TESSEN — Brands, websites and visual content	TESSEN — 品牌、网站与视觉内容
+TESSEN — на главную	TESSEN — Home	TESSEN — 返回首页
+TESSEN — независимая студия на стыке дизайна, digital и визуального контента.	TESSEN is an independent studio working across design, digital experiences and visual content.	TESSEN 是一家独立设计工作室，专注于设计、数字体验与视觉内容的交汇之处。
+TESSEN — независимая студия. Проектируем бренды, сайты и визуальный контент: от структуры до работающего результата.	TESSEN is an independent studio creating brands, websites and visual content, from a clear structure to a working result.	TESSEN 是一家独立设计工作室，从清晰的架构到真正可用的成果，打造品牌、网站与视觉内容。
+UX и структура платформы	Platform UX and structure	平台用户体验与架构
+UX/UI · Платформа бронирования · Айдентика	UX/UI · Booking platform · Visual identity	UX/UI · 预订平台 · 品牌视觉
+UX/UI и цифровые продукты	UX/UI and digital products	UX/UI 与数字产品
+АВТОМАТИЗАЦИЯ	AUTOMATION	自动化
+АРХИВ ПРОЕКТОВ	PROJECT ARCHIVE	项目档案
+Автоматизация — подробнее	Automation — learn more	自动化 — 了解更多
+Адаптация для мобильного просмотра	Mobile adaptation	移动端适配
+Адаптивные интерфейсы	Responsive interfaces	响应式界面
+Адаптивные состояния	Responsive states	响应式设计状态
+Адаптивный дизайн	Responsive design	响应式设计
+Айдентика	Visual identity	品牌视觉
+БОЛЬШЕ СМЫСЛА	MORE MEANING	更多意义
+БРЕНД	BRAND	品牌
+Без лишнего слоя между задачей и тем, кто её решает.	Direct access to the person solving the problem.	直接与解决问题的人沟通，减少不必要的环节。
+Берём задачу целиком или подключаемся на конкретном этапе. Формат работы определяем по тому, что нужно проекту.	We can lead a project end to end or join at a particular stage. The work is shaped around what the project needs.	我们可以全程负责项目，也可以参与某个具体阶段。合作方式取决于项目本身的需要。
+Большой ассортимент, разные сценарии выбора и множество состояний интерфейса требовали ясной структуры. Посетителю нужно быстро понять, какой квест подходит, и без лишних шагов перейти к записи.	A broad range of experiences, different ways to choose and many interface states called for a clear structure. Visitors needed to find the right quest quickly and book without unnecessary steps.	丰富的项目、不同的选择方式和大量界面状态，都需要清晰的架构。访客应能快速找到合适的密室游戏，并顺畅完成预订。
+Бренд	Brand	品牌
+Бренд — подробнее	Brand — learn more	品牌 — 了解更多
+Бренд. Сайт. Контент.	Brand. Website. Content.	品牌。网站。内容。
+Бренды · Сайты · Контент	Brands · Websites · Content	品牌 · 网站 · 内容
+Бронирование / дата и время	Booking / date and time	预订 / 日期与时间
+В TESSEN отвечаю за стратегию, структуру, арт-дирекшн и конечный результат проекта.	At TESSEN, I take responsibility for strategy, structure, art direction and the final result.	在 TESSEN，我亲自负责策略、架构、艺术指导与最终成果。
+В интерфейсе выстроены отдельные уровни для обзора, категорий и подробных программ. Крупные визуалы задают настроение, а структурированные блоки помогают найти нужную информацию.	The interface has clear levels for the overview, categories and individual experiences. Large visuals set the mood, while structured sections make the details easy to find.	界面为总览、类别和具体活动设置了清晰层级。大幅视觉画面营造氛围，结构化内容帮助用户快速找到信息。
+ВЫБЕРИТЕ УДОБНЫЙ СПОСОБ	CHOOSE WHAT WORKS FOR YOU	选择方便的联系方式
+Визуалы для кампаний	Campaign visuals	活动视觉素材
+Визуальная система	Visual system	视觉系统
+Визуальная система, по которой узнают компанию и которую удобно развивать.	A visual system that makes a company recognizable and is easy to grow.	让品牌易于识别、便于持续发展的视觉系统。
+Визуальные материалы для продуктов, кампаний и цифровых площадок — как часть общей системы.	Visual assets for products, campaigns and digital platforms, designed as part of one system.	为产品、营销活动和数字平台创作视觉内容，并融入统一的品牌体系。
+Визуальные направления TESSEN	TESSEN creative disciplines	TESSEN 视觉方向
+Визуальные правила	Visual guidelines	视觉规范
+Внимательно	With care	注重细节
+Все	All	全部
+Все проекты	All projects	全部项目
+Галерея избранных проектов	Selected projects gallery	精选项目画廊
+Готовим результат к работе в реальной среде.	Prepare everything for real-world use.	让成果准备好投入实际使用。
+Давайте обсудим	LET’S TALK	聊聊吧
+Детали важны, когда они помогают целому.	Details matter when they serve the whole.	细节服务于整体，才真正有意义。
+Детали цифровой презентации	Details of the digital presentation	数字展示细节
+Детальная страница / визуальная подача	Detail page / visual presentation	详情页 / 视觉呈现
+Диджитал	Digital	数字体验
+Дизайн для запуска	Launch design	上线设计
+Дизайн должен быть готов к производству и использованию.	Design should be ready to build and use.	设计应当能够真正落地并投入使用。
+Дизайн страниц	Page design	页面设计
+Дизайн страниц и состояний	Page and state design	页面与状态设计
+Для кого предназначен проект?	Who is the project for?	项目面向哪些人？
+Для презентации выстроены иерархия сообщений, ритм экранов, визуальные сцены и адаптивные композиции. Продуктовые интерфейсы и контент работают как единая система.	The presentation brings together a clear message hierarchy, a rhythm of screens, visual scenes and responsive compositions. Product interfaces and content form one coherent system.	展示方案整合了清晰的信息层级、界面节奏、视觉场景与响应式布局。产品界面和内容形成统一体系。
+Доводим экраны, материалы и детали.	Refine the screens, assets and details.	完善界面、素材与细节。
+Другие страницы проекта	Other project pages	项目其他页面
+ЕВГЕНИЙ	EVGENY	叶夫根尼
+ЕСТЬ ЗАДАЧА	HAVE A PROJECT	有项目要做
+Есть задача?	HAVE A PROJECT?	有项目要做？
+ЗАДАЧА / СИСТЕМА / РЕЗУЛЬТАТ	CHALLENGE / SYSTEM / RESULT	需求 / 体系 / 成果
+Задача	Challenge	项目挑战
+Запуск	Launch	上线
+Знак TESSEN — веер	TESSEN fan mark	TESSEN 扇形标志
+ИДЕНТИКА / АРТ-ДИРЕКШН / ЗАПУСК	IDENTITY / ART DIRECTION / LAUNCH	品牌视觉 / 艺术指导 / 上线
+ИДЕЯ · ФОРМА · РЕЗУЛЬТАТ ·	IDEA · FORM · RESULT ·	构想 · 形式 · 成果 ·
+ИНТЕРФЕЙСЫ	INTERFACES	界面
+Избранные	Selected	精选
+Избранные проекты TESSEN: цифровые продукты, сайты, брендинг и визуальный контент.	Selected TESSEN projects in digital products, websites, branding and visual content.	精选 TESSEN 项目，涵盖数字产品、网站、品牌设计与视觉内容。
+Изображения и материалы, которые говорят на одном языке с брендом.	Images and content that speak the same visual language as the brand.	让图像与内容使用同一种品牌语言。
+Интерфейсы — подробнее	Interfaces — learn more	界面 — 了解更多
+Информационные блоки	Information sections	信息模块
+Ищем точку, где ясная структура, сильный образ и работающий результат становятся одним проектом.	We bring clear structure, a distinctive image and a useful result together in one project.	让清晰的架构、鲜明的形象与真正可用的成果融为一体。
+КАМПАНИИ / ИЗОБРАЖЕНИЯ / ПРОДАКШН	CAMPAIGNS / IMAGERY / PRODUCTION	营销活动 / 图像 / 制作
+КОНТЕНТ	CONTENT	内容
+КТО МЫ	WHO WE ARE	关于我们
+Как устроена работа.	How we work.	我们的工作方式。
+Какие сроки и материалы уже есть?	What is the timeline, and what materials do you already have?	项目时间安排如何？目前有哪些现成素材？
+Карточка квеста / содержание и действие	Quest page / content and action	项目详情 / 内容与操作
+Каталог / акции и тематические подборки	Catalogue / offers and curated collections	目录 / 优惠与主题精选
+Каталог / сценарий выбора	Catalogue / selection journey	目录 / 选择流程
+Каталог и фильтрация	Catalogue and filtering	目录与筛选
+Каталог, карточки квестов и сценарий бронирования в одной цифровой системе.	A catalogue, detailed quest pages and booking flow in one digital system.	将目录、密室游戏详情与预订流程整合进同一数字平台。
+Контакт — TESSEN	Contact — TESSEN	联系 TESSEN
+Контакты	Contact	联系方式
+Контакты TESSEN	Contact TESSEN	联系 TESSEN
+Контент	Content	内容
+Контент для презентации	Presentation content	展示内容
+Контент для сайтов	Website content	网站内容
+Контент — подробнее	Content — learn more	内容 — 了解更多
+Концепция	Concept	概念设计
+Корпоративные сайты	Corporate websites	企业网站
+ЛИСТАЙТЕ ВНИЗ ↓	SCROLL DOWN ↓	向下滚动 ↓
+ЛИСТАЙТЕ ГАЛЕРЕЮ →	EXPLORE THE GALLERY →	浏览画廊 →
+Лендинги и продуктовые сайты	Landing and product websites	落地页与产品网站
+Логотип и знак	Logo and brand mark	标志与品牌符号
+Логотипы, айдентика и визуальные системы, которые держат характер на каждом носителе.	Logos, identities and visual systems that carry a brand’s character across every touchpoint.	设计标志、品牌视觉与视觉系统，让品牌个性贯穿每一个接触点。
+МЕНЬШЕ ШУМА	LESS NOISE	少些喧嚣
+МОСКВА / УДАЛЁННО	MOSCOW / REMOTE	莫斯科 / 远程合作
+Многопрофильный продукт и визуальный язык для его цифровой презентации.	A multi-profile product and the visual language for its digital presentation.	多重身份产品及其数字展示所需的视觉语言。
+Мобильная навигация	Mobile navigation	移动端导航
+Мобильные экраны / ключевые сценарии	Mobile screens / key journeys	移动端界面 / 核心流程
+Модульная система экранов	Modular screen system	模块化界面系统
+НА СВЯЗИ	GET IN TOUCH	联系我
+НАПРАВЛЕНИЯ	WHAT WE DO	业务方向
+НАЧНЁМ С РАЗГОВОРА	LET’S START A CONVERSATION	从交流开始
+НЕТ ГОТОВОГО БРИФА?	NO BRIEF YET?	还没有完整需求？
+Набор связанных экранов и интерфейсных состояний для каталога и бронирования. Проект учитывает контекст реализации на Bitrix24, интеграций и автоматизации.	A connected set of screens and interface states for browsing and booking. The work also considers implementation on Bitrix24, integrations and automation.	为目录浏览与预订设计了一套相互关联的界面和状态，同时考虑在 Bitrix24 上落地、系统集成与自动化需求。
+Наверх ↑	Back to top ↑	返回顶部 ↑
+Навигация	Navigation	导航
+Направления айдентики	Visual identity directions	品牌视觉方向
+Напрямую	Directly	直接沟通
+Находим визуальное направление и систему.	Find the visual direction and build a system around it.	找到视觉方向，并建立完整体系。
+Начать разговор	Start a conversation	开始交流
+Начните с того,	Start with	从现有的
+Не останавливаемся на красивом макете.	We go beyond a beautiful mockup.	好设计，不能止于漂亮的画面。
+О студии	About	关于工作室
+О студии — TESSEN	About — TESSEN	关于工作室 — TESSEN
+ОСНОВАТЕЛЬ СТУДИИ	STUDIO FOUNDER	工作室创始人
+Обсудить бренд, сайт, цифровой продукт или визуальный контент с TESSEN. Почта, телефон и Telegram для связи.	Talk to TESSEN about a brand, website, digital product or visual content. Get in touch by email, phone or Telegram.	与 TESSEN 交流品牌、网站、数字产品或视觉内容项目。可通过邮件、电话或 Telegram 联系。
+Обсудить задачу	Discuss your project	聊聊需求
+Обсудить проект	Discuss a project	洽谈项目
+Одна логика работы.	One way of thinking.	统一的工作逻辑。
+Основная навигация	Main navigation	主导航
+От отдельного экрана до целостного языка бренда.	From a single screen to a complete brand language.	从单个界面到完整的品牌语言。
+От первого разговора	From the first conversation	从第一次沟通
+От собственных e-commerce-проектов и продуктовых сервисов — до сайтов, интерфейсов, айдентики и автоматизации.	My experience spans my own e-commerce ventures and product services, as well as websites, interfaces, visual identities and automation.	我的经验涵盖自主电商项目与产品服务，也包括网站、界面、品牌视觉和自动化。
+Открыть меню	Open menu	打开菜单
+Открыть проект PAGER	Open PAGER project	查看 PAGER 项目
+Открыть проект QUEST HERO	Open QUEST HERO project	查看 QUEST HERO 项目
+Открыть проект QUESTCENTER	Open QUESTCENTER project	查看 QUESTCENTER 项目
+ПОЧТА	EMAIL	邮箱
+ПОЧТА / ТЕЛЕФОН / ТЕЛЕГРАМ	EMAIL / PHONE / TELEGRAM	邮箱 / 电话 / TELEGRAM
+ПРОДУКТ	PRODUCT	产品
+ПРОЕКТЫ ВЕДУ ЛИЧНО	I LEAD EVERY PROJECT	由我亲自负责项目
+ПРЯМАЯ СВЯЗЬ	DIRECT CONTACT	直接联系
+Первый экран / идея нескольких профилей	Opening screen / multiple profiles	首页 / 多重身份概念
+Перейти к содержанию	Skip to content	跳转到正文
+Подача программ	Experience presentation	活动内容呈现
+Подробнее об услугах	Explore services	了解服务
+Портрет Евгения, основателя TESSEN	Portrait of Evgeny, founder of TESSEN	TESSEN 创始人叶夫根尼的肖像
+Практично	Practical	务实落地
+Предметные изображения	Product imagery	产品图像
+Предыдущий проект	Previous project	上一个项目
+Пришлите сайт, материалы или короткое описание задачи. Поможем определить объём, формат и следующий шаг.	Send a link, some materials or a short description of your project. We’ll help define the scope, format and next step.	发来网站链接、现有素材或简短的项目描述。我们会一起确定工作范围、合作方式和下一步。
+Программа / первый экран	Experience / opening screen	活动项目 / 首屏
+Продукт и визуальный язык	Product and visual language	产品与视觉语言
+Продукт — подробнее	Product — learn more	产品 — 了解更多
+Продуктовые сцены	Product scenes	产品场景
+Проектирование сложной платформы — от выбора квеста до подтверждения времени.	Designing a complex platform, from choosing a quest to confirming a time slot.	设计复杂的平台体验，从选择密室游戏到确认预订时段。
+Проектируем айдентику, сайты и визуальный контент как одну систему — от задачи до запуска.	We design identities, websites and visual content as one system, from the initial challenge to launch.	从需求到上线，我们将品牌视觉、网站与视觉内容设计为一个完整体系。
+Проекты ведутся от постановки задачи и структуры до визуальной системы и запуска. В основе подхода — опыт работы с цифровыми продуктами, сайтами и коммерческими задачами.	Projects move from the initial brief and structure through the visual system to launch. This approach is grounded in experience with digital products, websites and commercial work.	项目从明确需求和架构开始，经过视觉系统设计，最终走向上线。这套方法建立在数字产品、网站和商业项目的实践经验之上。
+Производство с AI-инструментами	Production with AI tools	运用 AI 工具制作内容
+Прямое участие	Personal involvement	亲自参与
+РАБОТЫ	WORK	作品
+РАССКАЖИТЕ	TELL US ABOUT IT	欢迎交流
+Работы	Work	作品
+Работы — TESSEN	Work — TESSEN	作品 — TESSEN
+Разбираемся в контексте, аудитории и ограничениях.	Understand the context, audience and constraints.	了解项目背景、受众与限制条件。
+Развитие продуктового сценария	Developing the product journey	产品体验流程
+Разделы сайта	Website sections	网站栏目
+Разные задачи. Один принцип: сначала понять, что должно работать — затем найти точную форму.	Different challenges. One principle: understand what needs to work, then find the right form.	项目各不相同，原则始终如一：先弄清什么需要真正发挥作用，再找到恰当的呈现方式。
+Разные форматы досуга нужно собрать в понятную навигацию, сохранив атмосферу каждого предложения и удобный путь к деталям.	Different leisure formats needed a clear navigation system that preserved the character of each offer and made the details easy to reach.	不同的娱乐形式需要清晰的导航，同时保留各自的氛围，让用户轻松找到详情。
+Расскажите о проекте в нескольких строках или пришлите материалы. Уточним формат работы и следующий шаг.	Tell us about your project in a few lines, or send over your materials. We’ll agree on a way to work together and the next step.	用几句话介绍项目，或发来现有素材。我们会一起确定合作方式与下一步。
+Реализация	Production	执行落地
+Редизайн	Redesign	重新设计
+Решение	Solution	解决方案
+С ЧЕГО НАЧАТЬ ПИСЬМО	WHAT TO INCLUDE	邮件可以写些什么
+САЙТ	WEBSITE	网站
+САЙТЫ	WEBSITES	网站
+САЙТЫ / UX/UI / ПРОДУКТЫ	WEBSITES / UX/UI / PRODUCTS	网站 / UX/UI / 产品
+СИСТЕМНЫЙ ДИЗАЙН ДЛЯ БИЗНЕСА	SYSTEMIC DESIGN FOR BUSINESS	面向企业的系统化设计
+СЛЕДУЮЩИЙ ПРОЕКТ / 01	NEXT PROJECT / 01	下一个项目 / 01
+СЛЕДУЮЩИЙ ПРОЕКТ / 02	NEXT PROJECT / 02	下一个项目 / 02
+СЛЕДУЮЩИЙ ПРОЕКТ / 03	NEXT PROJECT / 03	下一个项目 / 03
+СТРАТЕГИЯ / ДИЗАЙН / РЕАЛИЗАЦИЯ	STRATEGY / DESIGN / DELIVERY	策略 / 设计 / 落地
+Сайт · Структура · Адаптивный интерфейс	Website · Information architecture · Responsive interface	网站 · 信息架构 · 响应式界面
+Сайты и интерфейсы с ясной структурой, продуманными сценариями и точной визуальной подачей.	Websites and interfaces with clear structure, considered user journeys and precise visual expression.	以清晰架构、周到的用户流程和准确的视觉表达打造网站与界面。
+Сайты и продукты, где выразительная форма помогает человеку решить задачу.	Websites and products where expressive design helps people get things done.	让有表现力的设计真正帮助用户完成任务的网站与产品。
+Сайты — подробнее	Websites — learn more	网站 — 了解更多
+Система бронирования	Booking system	预订系统
+Система в деталях.	The system in detail.	细节中的完整体系。
+Система страниц для представления квестов и событий с единым визуальным характером.	A coherent set of pages for presenting quests and events with a consistent visual character.	以统一视觉风格呈现密室游戏与活动的系列页面。
+Система цифровых экранов и мобильных композиций, которая помогает последовательно раскрывать идею продукта.	A system of digital screens and mobile compositions that reveals the product idea step by step.	一套数字界面与移动端画面，循序渐进地呈现产品理念。
+Системно	Systematically	系统思考
+Скопировать адрес	Copy email address	复制邮箱地址
+Следующий проект	Next project	下一个项目
+Сложную продуктовую идею важно объяснить без перегрузки. Сайт должен последовательно показать сценарии использования и при этом сохранить характер самого продукта.	A complex product idea needed to be explained without overwhelming people. The website had to show use cases in a clear sequence while preserving the product’s character.	复杂的产品理念需要清楚地讲述，避免信息过载。网站既要有序展示使用场景，也要保留产品自身的个性。
+Смотреть кейс	View case study	查看案例
+Смотреть проект	View project	查看项目
+Смотреть проекты	Explore projects	浏览项目
+Смотреть работы	Explore work	浏览作品
+Сначала разбираемся, зачем решение нужно людям и бизнесу. Затем собираем форму, которая выдержит реальное использование.	First we clarify why people and the business need the solution. Then we give it a form that stands up to real use.	先弄清用户和企业为何需要这个方案，再设计出能够经受真实使用考验的形式。
+Собираем логику и путь пользователя.	Build the logic and the user journey.	梳理产品逻辑与用户路径。
+Содержание и детали программы	Experience content and details	活动内容与详情
+Соединяем задачу, структуру и визуальный язык. Проектируем то, что можно использовать, развивать и запускать.	We connect the challenge, structure and visual language. We design things that can be used, developed and launched.	将需求、架构与视觉语言连接起来，设计真正能够使用、拓展并上线的成果。
+Спроектированы каталог, навигация и фильтрация, подробные страницы квестов, отзывы и сценарий бронирования с календарём и выбором времени. В ходе разработки также исследовались два направления названия и логотипа — QUESTCENTER и QUESTREQUEST.	The work covers the catalogue, navigation and filters, detailed quest pages, reviews, and a booking flow with a calendar and time slots. Two naming and logo directions, QUESTCENTER and QUESTREQUEST, were also explored.	项目设计涵盖目录、导航与筛选、密室游戏详情页、评价，以及带有日历和时段选择的预订流程。设计过程中还探索了 QUESTCENTER 和 QUESTREQUEST 两套名称与标志方向。
+Структура	Structure	架构
+Структура разделов	Section structure	栏目架构
+Структура сайта	Website structure	网站架构
+ТЕЛЕГРАМ	TELEGRAM	TELEGRAM
+ТЕЛЕФОН	PHONE	电话
+ТРИ ПРОЕКТА / ТРИ РАЗНЫЕ ЗАДАЧИ	THREE PROJECTS / THREE DIFFERENT CHALLENGES	三个项目 / 三种不同挑战
+Три направления.	Three disciplines.	三个方向。
+Услуги	Services	服务
+Услуги TESSEN: айдентика, сайты, UX/UI и визуальный контент. Работа от постановки задачи до готовых материалов.	TESSEN services: visual identity, websites, UX/UI and visual content, from the initial brief to finished assets.	TESSEN 提供品牌视觉、网站、UX/UI 与视觉内容服务，从明确需求到交付成品。
+Услуги — TESSEN	Services — TESSEN	服务 — TESSEN
+Фильтр проектов	Project filters	项目筛选
+Цифровая подача квестов, событий и программ в одной системе.	A unified digital experience for quests, events and programmes.	以统一的数字体验呈现密室游戏、活动与项目内容。
+ЧТО ДЕЛАЕМ	WHAT WE DO	我们的业务
+Что нужно создать или изменить?	What do you need to create or change?	您希望创建或改进什么？
+в digital и бизнесе	in digital and business	数字与商业经验
+до запуска.	through to launch.	直到上线。
+лет	years	年
+на каждом этапе.	at every stage.	贯穿每个阶段。
+проекты.	projects.	项目。
+что уже есть.	what you already have.	资源开始。
+Независимая студия дизайна, digital и визуального контента	An independent studio for design, digital experiences and visual content	专注于设计、数字体验与视觉内容的独立工作室
+# English editorial labels in the Russian original are intentionally translated for the Chinese edition.
+BRAND · DIGITAL · CONTENT	BRAND · DIGITAL · CONTENT	品牌 · 数字体验 · 内容
+TESSEN / INDEPENDENT STUDIO	TESSEN / INDEPENDENT STUDIO	TESSEN / 独立设计工作室
+SELECTED WORK	SELECTED WORK	精选作品
+WHAT WE DO	WHAT WE DO	我们的业务
+01 / BRAND	01 / BRAND	01 / 品牌
+02 / DIGITAL	02 / DIGITAL	02 / 数字体验
+03 / CONTENT	03 / CONTENT	03 / 内容
+PROCESS	PROCESS	工作流程
+INDEX / 001	INDEX / 001	项目索引 / 001
+Brand	Brand	品牌
+Digital	Digital	数字体验
+Content	Content	内容
+Digital / Brand	Digital / Brand	数字体验 / 品牌
+Digital / Content	Digital / Content	数字体验 / 内容
+DIGITAL / BRAND	DIGITAL / BRAND	数字体验 / 品牌
+DIGITAL / CONTENT	DIGITAL / CONTENT	数字体验 / 内容
+SELECTED FRAMES	SELECTED FRAMES	精选画面
+DISCIPLINES / 003	DISCIPLINES / 003	服务方向 / 003
+BRAND	BRAND	品牌
+DIGITAL	DIGITAL	数字体验
+CONTENT	CONTENT	内容
+STUDIO / 004	STUDIO / 004	工作室 / 004
+01 / FOUNDER	01 / FOUNDER	01 / 创始人
+PRINCIPLES	PRINCIPLES	工作原则
+CONTACT / 005	CONTACT / 005	联系 / 005
+
+Повторить раскрытие веера	Replay the fan reveal	重新展开扇形作品
+Лендинг	Landing Page	落地页
+Лендинг под ключ	Turnkey Landing Page	全包落地页
+Сайт для бизнеса	Business Website	企业网站
+Когда тексты и материалы уже готовы.	When your copy and materials are ready.	适合文案和素材已准备好的项目。
+Когда нужна готовая страница без подготовки контента.	When you want a finished page without preparing the content.	适合希望无需准备内容即可获得完整页面的项目。
+Когда бизнесу нужно несколько связанных страниц.	When your business needs several connected pages.	适合需要多个关联页面的企业。
+1 страница · до 6 смысловых блоков	1 page · up to 6 content sections	1 个页面 · 最多 6 个内容模块
+1 страница · до 6–7 смысловых блоков	1 page · up to 6–7 content sections	1 个页面 · 最多 6–7 个内容模块
+До 3 уникальных страниц в согласованном объёме	Up to 3 unique pages within the agreed scope	在约定范围内，最多 3 个独立设计的页面
+Структура и одна визуальная концепция	Page structure and one visual concept	页面结构与一套视觉概念
+Дизайн, адаптив и форма заявки	Design, responsive layouts and an enquiry form	页面设计、自适应布局与咨询表单
+Базовая техническая настройка и публикация	Basic technical setup and launch	基础技术配置与上线
+1 раунд корректировок	1 round of revisions	1 轮修改
+Тексты и исходные материалы предоставляет клиент.	The client provides the copy and source materials.	文案和原始素材由客户提供。
+Структура и тексты с нуля	Page structure and copy written from scratch	从零开始规划页面结构并撰写文案
+Необходимый для страницы визуальный контент и индивидуальный дизайн	Page-specific visual content and custom design	页面所需视觉素材与定制设计
+Адаптив, форма, базовая аналитика и техническая настройка	Responsive layouts, a form, basic analytics and technical setup	自适应布局、表单、基础数据分析与技术配置
+Публикация и 2 раунда корректировок	Launch and 2 rounds of revisions	上线及 2 轮修改
+Клиент предоставляет информацию о бизнесе — остальное собираем сами.	You tell us about your business; we create the rest.	客户提供业务信息，其余内容由我们完成。
+от 39 900 ₽	from ₽39,900	₽39,900 起
+Дизайн для desktop, tablet и mobile	Design for desktop, tablet and mobile	桌面、平板与手机端设计
+Формы, базовая аналитика и SEO-настройка	Forms, basic analytics and SEO setup	表单、基础数据分析与 SEO 配置
+Сборка, публикация и до 2 раундов корректировок	Build, launch and up to 2 rounds of revisions	网站制作、上线及最多 2 轮修改
+Тексты и основные материалы предоставляет клиент. Производство контента можно добавить отдельно.	The client provides copy and key materials. Content production can be added separately.	客户提供文案和主要素材；内容制作可另行增加。
+Сайты, цифровые продукты и процессы, которые работают как единая система.	Websites, digital products and workflows designed as one system.	网站、数字产品与业务流程作为统一系统协同运作。
+Редизайн сайта	Website Redesign	网站改版
+от 29 900 ₽	from ₽29,900	₽29,900 起
+Новый визуальный уровень при сохранении большей части структуры и контента.	A new visual standard while retaining most of the site's structure and content.	在保留大部分结构与内容的基础上升级视觉呈现。
+Интеграции и автоматизация	Integrations & Automation	集成与自动化
+Формы, CRM, уведомления и рабочие сценарии. Нестандартные API оцениваем отдельно.	Forms, CRM, notifications and automated workflows. Bespoke APIs are quoted separately.	表单、CRM、通知与自动化流程。定制 API 另行报价。
+Продуктовый / специальный сайт	Product / Bespoke Website	产品网站 / 定制网站
+от 99 900 ₽	from ₽99,900	₽99,900 起
+Сложная структура, индивидуальные интерфейсы, анимация и нестандартные сценарии.	Complex structures, custom interfaces, motion and bespoke user journeys.	复杂架构、定制界面、动效与特殊交互流程。
+Интернет-магазин	Online Store	在线商店
+от 129 900 ₽	from ₽129,900	₽129,900 起
+Каталог, карточки товаров, корзина, заказ и необходимые интеграции.	Catalogue, product pages, cart, checkout and required integrations.	商品目录、商品详情、购物车、下单流程及所需集成。
+Знак и визуальный язык, которые держат характер на каждом носителе.	A mark and visual language that retain their character across every touchpoint.	在各类应用场景中保持鲜明个性的标志与视觉语言。
+Логотип	Logo	标志设计
+от 24 900 ₽	from ₽24,900	₽24,900 起
+Концепция знака или wordmark, базовые версии и подготовка файлов.	A symbol or wordmark concept, essential variants and production-ready files.	图形标志或字标概念、基础版本及交付文件。
+Айдентика / Mini Identity	Visual Identity / Mini Identity	视觉识别 / Mini Identity
+Логотип, цвет, типографика, визуальный язык и базовые носители.	Logo, colour, typography, a visual language and essential applications.	标志、色彩、字体、视觉语言及基础应用。
+Тексты и изображения, которые продолжают визуальную систему бренда.	Copy and imagery that extend the brand's visual system.	延续品牌视觉体系的文案与图像。
+Визуалы для бизнеса	Business Visuals	商业视觉素材
+5 самостоятельных коммерческих изображений в одной визуальной концепции.	5 standalone commercial images in one visual concept.	同一视觉概念下的 5 张独立商业图片。
+Тексты для лендинга	Landing Page Copy	落地页文案
+от 9 900 ₽	from ₽9,900	₽9,900 起
+Оффер, заголовки, основные смысловые блоки и призывы к действию.	Core offer, headlines, main content sections and calls to action.	核心卖点、标题、主要内容模块与行动号召。
+Тексты для сайта	Website Copy	网站文案
+от 19 900 ₽	from ₽19,900	₽19,900 起
+До 3 основных страниц.	Up to 3 main pages.	最多 3 个主要页面。
+Расширенное визуальное производство	Extended Visual Production	扩展视觉制作
+по оценке	quoted individually	按项目报价
+Сложные сцены, серии изображений и рекламные кампании.	Complex scenes, image series and advertising campaigns.	复杂场景、系列图片与广告活动。
+Дополнительная уникальная страница	Additional Unique Page	额外定制页面
+Страница по существующему шаблону сайта	Page Using an Existing Site Template	沿用现有网站模板的页面
+Дополнительная дизайн-концепция	Additional Design Concept	额外设计方案
+Дополнительный язык	Additional Language	增加语言版本
+Срочная реализация	Rush Delivery	加急交付
+Сопровождение после запуска	Post-launch Support	上线后维护
+от 7 900 ₽ / мес.	from ₽7,900 / month	每月 ₽7,900 起
+Сложные формы / калькуляторы	Complex Forms / Calculators	复杂表单 / 计算器
+CRM / API / нестандартные интеграции	CRM / API / Bespoke Integrations	CRM / API / 定制集成
+WordPress / 1С-Битрикс / custom-разработка	WordPress / 1C-Bitrix / Custom Development	WordPress / 1C-Bitrix / 定制开发
+Лицензии, хостинг, платные сервисы	Licences, Hosting and Paid Services	授权、托管与付费服务
+оплачиваются отдельно	charged separately	另行支付
+Что входит	What's included	服务包含
+Обсудить формат	Discuss this option	咨询此方案
+BRAND + WEBSITE / ЕДИНАЯ СИСТЕМА	BRAND + WEBSITE / ONE SYSTEM	品牌 + 网站 / 统一体系
+Бренд + сайт	Brand + Website	品牌 + 网站
+Базовая айдентика и сайт как одна визуальная система. Состав страниц и материалов определяем перед стартом.	An essential visual identity and website designed as one system. We agree the page and content scope before work begins.	将基础视觉识别与网站设计成统一体系。开始前确认页面与内容范围。
+от 79 900 ₽	from ₽79,900	₽79,900 起
+Стоимость услуг TESSEN: лендинги, сайты, брендинг, визуальный контент и автоматизация. Форматы работы и состав проектов.	TESSEN services and pricing: landing pages, websites, branding, visual content and automation. Explore project formats and scope.	TESSEN 服务与价格：落地页、网站、品牌设计、视觉内容及自动化。了解项目形式与服务范围。
+01 / ВЕБ-ПРОДУКТЫ	01 / WEB FORMATS	01 / 网站方案
+С чего начать	Where to start	从这里开始
+Три формата для разных задач и степени готовности материалов.	Three formats for different goals and levels of content readiness.	根据不同目标与素材准备情况选择三种方案。
+Цены в рублях. Для услуг с пометкой «от» итоговую стоимость определяем после обсуждения объёма работ.	Prices are in Russian roubles. For services marked “from”, the final quote depends on the agreed scope.	价格以俄罗斯卢布计。标有“起”的服务将在确认工作范围后确定最终报价。
+02 / НАПРАВЛЕНИЯ	02 / DISCIPLINES	02 / 服务领域
+Остальные задачи	More ways to work together	更多合作方式
+Отдельные услуги можно соединить в один проект или заказать для уже работающего бизнеса.	Combine individual services into one project or commission them for an existing business.	各项服务可组合成一个项目，也可用于现有业务。
+03 / ДОПОЛНИТЕЛЬНО	03 / ADD-ONS	03 / 附加服务
+Когда нужен больший объём	When the scope grows	当项目需要更多
+Дополнительные страницы, варианты и технические задачи обсуждаем вместе с основным проектом.	We scope additional pages, design directions and technical work alongside the main project.	额外页面、设计方案及技术工作会与主体项目一起确定范围。
+Дополнительные работы	Additional work	附加工作
+10 ПОЗИЦИЙ	10 OPTIONS	10 项
+Объём перевода, сроки срочной реализации и состав сложных интеграций согласовываем до начала работ.	We agree the translation scope, rush timeline and requirements for complex integrations before work begins.	翻译范围、加急交付时间及复杂集成需求均在开工前确认。
+19 900 ₽	₽19,900	₽19,900
+34 900 ₽	₽34,900	₽34,900
+9 900 ₽	₽9,900	₽9,900
+4 900 ₽	₽4,900	₽4,900
+01 / DIGITAL	01 / DIGITAL	01 / 数字体验
+03 / DIGITAL	03 / DIGITAL	03 / 数字体验
+Тексты и материалы клиента	Client provides copy and materials	客户提供文案和素材
+Тексты и визуалы готовим мы	We create the copy and visuals	文案和视觉素材由我们制作
+2 раунда корректировок	2 rounds of revisions	2 轮修改
+Тексты и основные материалы клиента	Client provides copy and key materials	客户提供文案和主要素材
+До 2 раундов корректировок	Up to 2 rounds of revisions	最多 2 轮修改
+Объём	Scope	范围
+Материалы	Materials	素材
+Правки	Revisions	修改
+Обсудить	Discuss	咨询
+От лендинга до магазина	From landing page to online store	从落地页到在线商店
+Логотип и визуальная система	Logo and visual identity	标志与视觉识别
+Тексты и изображения	Copy and imagery	文案与图像
+Связанные процессы и данные	Connected workflows and data	互联的流程与数据
+Лендинг, бизнес-сайт или магазин под вашу задачу	A landing page, business website or store built around your goals	根据您的需求打造落地页、企业网站或网店
+Логотип и визуальный язык для бизнеса	A logo and visual language for your business	为企业打造标志与视觉语言
+Тексты и изображения для сайта и продвижения	Copy and imagery for your website and campaigns	用于网站与推广的文案和视觉素材
+Формы, CRM и уведомления без ручной рутины	Forms, CRM and notifications without repetitive manual work	用表单、CRM 和通知减少重复的手工操作
+Сайт, бренд, контент или автоматизация — начните с того, что нужно вашему проекту сейчас.	Website, brand, content or automation — start with what your project needs now.	网站、品牌、内容或自动化——从项目当下最需要的部分开始。
+ВЫБЕРИТЕ ЗАДАЧУ	CHOOSE YOUR GOAL	选择您的需求
+С ЧЕГО НАЧНЁМ	WHERE TO BEGIN	从哪里开始
+Сайт, бренд, контент и автоматизация. Выберите отправную точку — остальное соберём в систему.	Website, brand, content and automation. Choose where to begin — we will bring the rest together.	网站、品牌、内容与自动化。选择起点，其余部分由我们整合成体系。
+Выбрать направление	Choose a service	选择服务方向
+01 / САЙТЫ	01 / WEBSITES	01 / 网站
+Сайты под задачу	Websites built for your needs	按需求打造的网站
+Сравните объём, подготовку материалов и число раундов правок до выбора формата.	Compare the scope, who prepares the content and revision rounds before choosing a format.	选择方案前，请比较项目范围、素材准备分工和修改轮次。
+СЛОЖНЕЕ ОБЫЧНОГО САЙТА	BEYOND A STANDARD WEBSITE	超越常规网站
+Когда нужен редизайн, магазин или особый цифровой сценарий.	For redesigns, online stores and custom digital experiences.	适用于网站改版、在线商店及定制数字体验。
+Бренд, контент и автоматизация	Brand, content and automation	品牌、内容与自动化
+Соединяем формы, CRM, уведомления и передачу данных в работающий процесс.	We connect forms, CRM, notifications and data into a working process.	将表单、CRM、通知与数据传输整合为高效流程。
+05 / ДОПОЛНИТЕЛЬНО	05 / ADD-ONS	05 / 附加服务
+Сайты	Websites	网站
+Автоматизация	Automation	自动化
