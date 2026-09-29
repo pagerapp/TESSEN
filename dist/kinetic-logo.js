@@ -73,9 +73,9 @@ async function initLogo(host) {
   const rim = new THREE.DirectionalLight(servicesMode ? '#ddd7dd' : '#d72050', 2.2);
   rim.position.set(4, 1, 2);
   scene.add(rim);
-  const metal = new THREE.MeshPhysicalMaterial({ color: '#51464e', metalness: .88, roughness: .29, clearcoat: .4, clearcoatRoughness: .26, envMapIntensity: 1.1 });
-  const edge = new THREE.MeshStandardMaterial({ color: '#71626c', metalness: .9, roughness: .24, envMapIntensity: 1.2 });
-  const enamel = new THREE.MeshPhysicalMaterial({ color: servicesMode ? '#b8b2b8' : '#b90939', metalness: .35, roughness: .26, clearcoat: .7, clearcoatRoughness: .2 });
+  const metal = new THREE.MeshPhysicalMaterial({ color: servicesMode ? '#a69ba4' : '#51464e', metalness: .88, roughness: .29, clearcoat: .4, clearcoatRoughness: .26, envMapIntensity: 1.1 });
+  const edge = new THREE.MeshStandardMaterial({ color: servicesMode ? '#bdb3bd' : '#71626c', metalness: .9, roughness: .24, envMapIntensity: 1.2 });
+  const enamel = new THREE.MeshPhysicalMaterial({ color: servicesMode ? '#ee1349' : '#b90939', metalness: .35, roughness: .26, clearcoat: .7, clearcoatRoughness: .2 });
   const response = await fetch('/Assets/Logo/fan.svg');
   if (!response.ok) throw new Error('Logo unavailable');
   const documentSVG = new DOMParser().parseFromString(await response.text(), 'image/svg+xml');
@@ -158,7 +158,7 @@ async function initLogo(host) {
   resizeObserver.observe(host);
   const observer = new IntersectionObserver(entries => { inView = entries[0].isIntersecting; updateActivity(); }, { threshold: .01 });
   observer.observe(host);
-  const serviceNav = host.dataset.kineticLogo === 'services' ? document.querySelector('.services-intro .service-routes') : null;
+  const serviceNav = host.dataset.kineticLogo === 'services' ? document.querySelector('.svc-routes, .services-intro .service-routes') : null;
   if (serviceNav) {
     const routes = [...serviceNav.querySelectorAll('[data-service-index]')];
     const caption = document.querySelector('[data-service-caption]');
