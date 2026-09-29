@@ -1,5 +1,8 @@
+import { createHash } from 'node:crypto';
 import { mkdirSync, writeFileSync, rmSync, readFileSync } from 'node:fs';
 import { locales, localizedPath, localizeHtml } from './i18n.mjs';
+
+const assetRevision = path => createHash('sha256').update(readFileSync(path)).digest('hex').slice(0, 8);
 
 const email = 'martynov.e1982@gmail.com';
 const phone = '+79953003038';
@@ -92,11 +95,11 @@ function footer() {
 function shell({ title, description, current = '', body, path = '/', image = 'questcenter-1', bodyClass = '', preview = false, kinetic = true, stylesheet = '' }) {
   const hasKineticLogo = path !== '/' && !preview && kinetic;
   if (hasKineticLogo && !body.includes('data-kinetic-logo=')) body = body.replace(/<section class="([^"]*)"([^>]*)>/, (_, classes, attributes) => `<section class="${classes} kinetic-intro"${attributes}><div class="kinetic-scene" data-kinetic-logo="${current}" aria-hidden="true"><img class="kinetic-fallback" src="/Assets/Logo/fan.svg" alt="" width="512" height="512"></div>`);
-  const kineticScripts = hasKineticLogo ? '<script type="importmap">{"imports":{"three":"/vendor/three/three.module.min.js"}}</script><script type="module" src="/kinetic-logo.js"></script>' : '';
+  const kineticScripts = hasKineticLogo ? `<script type="importmap">{"imports":{"three":"/vendor/three/three.module.min.js"}}</script><script type="module" src="/kinetic-logo.js?v=${assetRevision('kinetic-logo.js')}"></script>` : '';
   const fullTitle = title === 'TESSEN' ? 'TESSEN — Бренды, сайты и визуальный контент' : `${title} — TESSEN`;
   const canonical = origin ? `<link rel="canonical" href="${origin}${path}">` : '';
   const ogImage = origin ? `${origin}/media/${image}-1600.jpg` : `/media/${image}-1600.jpg`;
-  return `<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0a0a0a"><title>${esc(fullTitle)}</title><meta name="description" content="${esc(description)}">${preview ? '<meta name="robots" content="noindex,nofollow">' : ''}${canonical}<meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:site_name" content="TESSEN"><meta property="og:title" content="${esc(fullTitle)}"><meta property="og:description" content="${esc(description)}"><meta property="og:image" content="${ogImage}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">${stylesheet ? `<link rel="stylesheet" href="${stylesheet}">` : ''}${preview ? '<link rel="stylesheet" href="/services-concept.css">' : ''}<script defer src="/app.js"></script>${kineticScripts}<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'Organization', name: 'TESSEN', description: 'Независимая студия дизайна, digital и визуального контента', email, telephone: phone, sameAs: [telegram], ...(origin ? { url: origin } : {}) })}</script></head><body${bodyClass ? ` class="${esc(bodyClass)}"` : ''}>${header(current)}<main id="main">${body}</main>${footer()}</body></html>`;
+  return `<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#0a0a0a"><title>${esc(fullTitle)}</title><meta name="description" content="${esc(description)}">${preview ? '<meta name="robots" content="noindex,nofollow">' : ''}${canonical}<meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:site_name" content="TESSEN"><meta property="og:title" content="${esc(fullTitle)}"><meta property="og:description" content="${esc(description)}"><meta property="og:image" content="${ogImage}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css">${stylesheet ? `<link rel="stylesheet" href="${stylesheet}?v=${assetRevision(stylesheet.slice(1))}">` : ''}${preview ? '<link rel="stylesheet" href="/services-concept.css">' : ''}<script defer src="/app.js"></script>${kineticScripts}<script type="application/ld+json">${JSON.stringify({ '@context': 'https://schema.org', '@type': 'Organization', name: 'TESSEN', description: 'Независимая студия дизайна, digital и визуального контента', email, telephone: phone, sameAs: [telegram], ...(origin ? { url: origin } : {}) })}</script></head><body${bodyClass ? ` class="${esc(bodyClass)}"` : ''}>${header(current)}<main id="main">${body}</main>${footer()}</body></html>`;
 }
 
 function projectTeaser(project, mode = '', headingLevel = 3) {
