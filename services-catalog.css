@@ -116,9 +116,9 @@
   .svc-hero-copy h1{font-size:clamp(40px,10.8vw,62px);line-height:.9;margin-bottom:20px}
   .svc-hero-copy p{font-size:17px;max-width:550px}
   .svc-routes{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,auto);grid-auto-rows:auto;gap:10px}
-  .svc-route{display:flex;flex-direction:column;align-items:stretch;min-height:clamp(218px,30vw,245px);padding:17px}
+  .svc-route{display:flex;flex-direction:column;align-items:stretch;min-height:clamp(250px,42vw,310px);padding:17px}
   .svc-route-id{font-size:9px;white-space:nowrap}
-  .svc-route-icon{width:clamp(56px,12vw,82px);top:11px;right:11px;opacity:1;filter:brightness(1.27) contrast(1.06) drop-shadow(0 8px 15px #eb17403d)}
+  .svc-route-icon{width:clamp(112px,24vw,164px);top:-6px;right:-14px;opacity:1;filter:brightness(1.27) contrast(1.06) drop-shadow(0 8px 15px #eb17403d)}
   .svc-route-bottom{display:grid;grid-template-rows:auto auto auto;align-content:end;gap:7px;margin-top:auto}
   .svc-route strong{font-size:clamp(22px,5vw,31px);line-height:.91;letter-spacing:-.025em}
   .svc-route .svc-route-detail{display:none}
@@ -177,5 +177,5 @@
   .svc-extras .extras-row strong{white-space:normal;overflow-wrap:anywhere}
   .svc-case-copy strong{font-size:36px}
 }
-@media(max-width:350px){.svc-routes{gap:8px}.svc-route{padding:12px;min-height:224px}.svc-route-icon{width:52px;top:8px;right:8px}.svc-route strong{font-size:20px}.svc-route .svc-route-short{font-size:10px}}
+@media(max-width:350px){.svc-routes{gap:8px}.svc-route{padding:12px;min-height:250px}.svc-route-icon{width:104px;top:-6px;right:-14px}.svc-route strong{font-size:20px}.svc-route .svc-route-short{font-size:10px}}
 @media(prefers-reduced-motion:reduce){.svc-route,.svc-route-icon,.svc-case-media img,.svc-web-details summary span{transition:none}}
