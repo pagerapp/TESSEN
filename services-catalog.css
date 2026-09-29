@@ -19,6 +19,8 @@
 .svc-route{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;min-width:0;padding:clamp(22px,2.1vw,36px);background:linear-gradient(150deg,#191419a8,#0a090cc9 78%);transition:border-color .28s ease,background-color .28s ease,box-shadow .28s ease}
 .svc-route:hover,.svc-route:focus-visible,.svc-route.is-active{border-color:#ffffff66;background-color:#28151d52;box-shadow:inset 0 1px 0 #ffffff2c,0 22px 50px #0003}
 .svc-route-id{position:relative;z-index:1;color:#f06184;margin:0;letter-spacing:.16em}
+.svc-route-icon{position:absolute;z-index:0;top:clamp(14px,1.45vw,24px);right:clamp(14px,1.45vw,24px);width:clamp(90px,8.3vw,145px);height:auto;aspect-ratio:1;object-fit:contain;pointer-events:none;opacity:.91;filter:brightness(1.08) drop-shadow(0 10px 18px #eb17402e);transition:transform .45s ease,opacity .45s ease}
+.svc-route:hover .svc-route-icon,.svc-route:focus-visible .svc-route-icon{transform:translateY(-4px);opacity:1}
 .svc-route-bottom{position:relative;z-index:1;display:grid;grid-template-rows:auto minmax(3.1em,auto) auto;align-items:start;row-gap:9px;width:100%}
 .svc-route strong{font:700 clamp(27px,2.05vw,37px)/.95 'Cormorant SC',Georgia,serif;text-transform:uppercase;letter-spacing:-.025em;overflow-wrap:anywhere;hyphens:auto;hyphenate-limit-chars:8 8 5;text-wrap:balance}
 .svc-route small{font-size:clamp(13px,.94vw,16px);line-height:1.42;color:#cdc5c9;max-width:310px}
@@ -111,9 +113,10 @@
   .svc-hero-copy h1{font-size:clamp(40px,10.8vw,62px);line-height:.9;margin-bottom:20px}
   .svc-hero-copy p{font-size:17px;max-width:550px}
   .svc-routes{grid-template-columns:1fr;grid-template-rows:none;grid-auto-rows:auto;gap:10px}
-  .svc-route{display:grid;grid-template-columns:49px minmax(0,1fr);align-items:start;gap:8px;min-height:112px;padding:17px 19px}
-  .svc-route-id{font-size:9px;padding-top:5px;white-space:nowrap}
-  .svc-route-bottom{display:grid;grid-template-rows:auto auto auto;gap:6px}
+  .svc-route{display:flex;flex-direction:column;align-items:stretch;min-height:150px;padding:17px 19px}
+  .svc-route-id{font-size:9px;white-space:nowrap}
+  .svc-route-icon{width:60px;top:10px;right:14px}
+  .svc-route-bottom{display:grid;grid-template-rows:auto auto auto;gap:6px;margin-top:45px}
   .svc-route strong{font-size:clamp(29px,7vw,39px);line-height:.93}
   .svc-route small{font-size:12px;line-height:1.35}
   .svc-route-price{font-size:12px;padding-top:5px}
@@ -169,5 +172,5 @@
   .svc-extras .extras-row strong{white-space:normal;overflow-wrap:anywhere}
   .svc-case-copy strong{font-size:36px}
 }
-@media(max-width:350px){.svc-route{grid-template-columns:42px minmax(0,1fr);padding:13px}.svc-route strong{font-size:26px}.svc-route small{font-size:11px}}
-@media(prefers-reduced-motion:reduce){.svc-route,.svc-case-media img,.svc-web-details summary span{transition:none}}
+@media(max-width:350px){.svc-route{padding:13px}.svc-route-icon{width:55px;top:8px;right:10px}.svc-route strong{font-size:26px}.svc-route small{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.svc-route,.svc-route-icon,.svc-case-media img,.svc-web-details summary span{transition:none}}
