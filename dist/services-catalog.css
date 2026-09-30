@@ -7,7 +7,7 @@
 .svc-hero-logo .kinetic-fallback{width:100%;right:0;opacity:.18;filter:grayscale(1)}
 .svc-hero-content{position:relative;z-index:2}
 .svc-hero-main{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1.18fr);gap:clamp(12px,1.4vw,24px);min-height:clamp(540px,74svh,720px)}
-.svc-hero-copy,.svc-route{position:relative;overflow:hidden;border:1px solid #ffffff2b;border-radius:clamp(15px,1.4vw,22px);-webkit-backdrop-filter:blur(12px) saturate(.8);backdrop-filter:blur(12px) saturate(.8);box-shadow:inset 0 1px 0 #ffffff17,0 22px 50px #0003;font-family:"Helvetica Neue",Arial,sans-serif}
+.svc-hero-copy,.svc-route{position:relative;overflow:hidden;border:1px solid #ffffff2b;border-radius:clamp(15px,1.4vw,22px);-webkit-backdrop-filter:blur(12px) saturate(.8);backdrop-filter:blur(12px) saturate(.8);box-shadow:inset 0 1px 0 #ffffff17,0 22px 50px #0003;font-family:'Fira Sans Condensed',sans-serif}
 .svc-hero-copy::before,.svc-route::before{content:"";position:absolute;top:0;left:8%;right:30%;height:1px;pointer-events:none;background:linear-gradient(90deg,transparent,#ffffff54 45%,transparent)}
 .svc-hero-copy{display:flex;flex-direction:column;justify-content:space-between;min-width:0;padding:clamp(25px,3.5vw,56px)}
 .svc-hero-copy{background:linear-gradient(145deg,#151215bd,#09090bdf 78%)}
@@ -23,7 +23,7 @@
 .svc-route-icon{position:absolute;z-index:0;top:clamp(14px,1.45vw,24px);right:clamp(14px,1.45vw,24px);width:clamp(90px,8.3vw,145px);height:auto;aspect-ratio:1;object-fit:contain;pointer-events:none;opacity:.91;filter:brightness(1.08) drop-shadow(0 10px 18px #eb17402e);transition:transform .45s ease,opacity .45s ease}
 .svc-route:hover .svc-route-icon,.svc-route:focus-visible .svc-route-icon{transform:translateY(-4px);opacity:1}
 .svc-route-bottom{position:relative;z-index:1;display:grid;grid-template-rows:auto minmax(3.1em,auto) auto;align-items:start;row-gap:9px;width:100%}
-.svc-route strong{font:700 clamp(27px,2.05vw,37px)/.95 'Cormorant SC',Georgia,serif;text-transform:uppercase;letter-spacing:-.025em;overflow-wrap:anywhere;hyphens:auto;hyphenate-limit-chars:8 8 5;text-wrap:balance}
+.svc-route strong{font:700 clamp(27px,2.05vw,37px)/.95 'Fira Sans Condensed',sans-serif;text-transform:uppercase;letter-spacing:-.025em;overflow-wrap:anywhere;hyphens:auto;hyphenate-limit-chars:8 8 5;text-wrap:balance}
 .svc-route small{font-size:clamp(13px,.94vw,16px);line-height:1.42;color:#cdc5c9;max-width:310px}
 .svc-route-short{display:none}
 .svc-route-price{display:flex;align-items:center;justify-content:space-between;width:100%;font-size:clamp(14px,1.05vw,17px);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -104,7 +104,7 @@
 .svc-case-media img{width:100%;height:100%;max-height:440px;object-fit:cover;object-position:center 45%;transition:transform .5s var(--ease)}
 .svc-case:hover .svc-case-media img{transform:scale(1.035)}
 .svc-case-copy{display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding:clamp(28px,3.5vw,60px)}
-.svc-case-copy strong{font:700 clamp(38px,4vw,70px)/.9 'Cormorant SC',Georgia,serif;letter-spacing:-.04em}
+.svc-case-copy strong{font:700 clamp(38px,4vw,70px)/.9 'Fira Sans Condensed',sans-serif;letter-spacing:-.04em}
 .svc-case-copy>span:not(.micro){font-size:15px;line-height:1.5;max-width:360px;color:#c5bbbe}
 .svc-case-copy em{font-size:13px;font-style:normal;font-weight:700;margin-top:auto;border-bottom:1px solid #fff;padding-bottom:8px}
 
