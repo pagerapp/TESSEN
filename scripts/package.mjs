@@ -5,10 +5,12 @@ const output = 'dist';
 rmSync(output, { recursive: true, force: true });
 mkdirSync(join(output, 'Assets/Logo'), { recursive: true });
 mkdirSync(join(output, 'Assets/icons'), { recursive: true });
+mkdirSync(join(output, 'Assets/PORTFOLIO'), { recursive: true });
 for (const file of ['index.html', 'style.css', 'services-catalog.css', 'services-concept.css', 'app.js', 'kinetic-logo.js', 'favicon.svg', 'robots.txt']) cpSync(file, join(output, file));
 for (const folder of ['work', 'services', 'services-concept', 'about', 'contact', 'en', 'zh', 'media', 'fonts']) cpSync(folder, join(output, folder), { recursive: true });
 for (const file of ['icon_4.webp', 'tessen_wordmark_accent.webp', 'tessen_wordmark_white.webp', 'fan.svg']) cpSync(join('Assets/Logo', file), join(output, 'Assets/Logo', file));
 for (const file of ['website_v3.webp', 'brand_v3.webp', 'media_v3.webp', 'automation_v3.webp', 'idea.webp']) cpSync(join('Assets/icons', file), join(output, 'Assets/icons', file));
+for (const file of ['_TEST_Mobile_portfolio_preview@0.5x.webp', 'QRQ_Mobile_portfolio_preview@0.5x.webp', 'PAGER_Mobile_portfolio_preview@0.5x.webp']) cpSync(join('Assets/PORTFOLIO', file), join(output, 'Assets/PORTFOLIO', file));
 if (existsSync('sitemap.xml')) cpSync('sitemap.xml', join(output, 'sitemap.xml'));
 
 mkdirSync(join(output, 'vendor/three'), { recursive: true });

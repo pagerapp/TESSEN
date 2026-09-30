@@ -128,8 +128,7 @@ if (pricingSection) {
     }
     const bounds = pricingSection.getBoundingClientRect();
     if (bounds.bottom < 0 || bounds.top > innerHeight) return;
-    const caseBlock = pricingSection.querySelector('.svc-case');
-    const travel = Math.max(1, caseBlock?.offsetTop || pricingSection.offsetHeight);
+    const travel = Math.max(1, pricingSection.offsetHeight);
     const distance = innerWidth <= 760 ? 420 : 300;
     const offset = distance * Math.min(1, Math.max(0, -bounds.top / travel));
     pricingSection.style.setProperty('--svc-parallax-y', `${Math.round(offset)}px`);
@@ -141,6 +140,54 @@ if (pricingSection) {
   addEventListener('resize', scheduleBackground, { passive: true });
   motion.addEventListener('change', scheduleBackground);
   scheduleBackground();
+}
+
+const serviceCasesTrack = document.querySelector('#svc-cases-track');
+if (serviceCasesTrack) {
+  const slides = [...serviceCasesTrack.querySelectorAll('.svc-project')];
+  const previous = document.querySelector('[data-svc-case-prev]');
+  const next = document.querySelector('[data-svc-case-next]');
+  const current = document.querySelector('[data-svc-case-current]');
+  const progress = document.querySelector('.svc-cases-progress span');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let active = 0;
+  let scheduled = false;
+  const update = () => {
+    const left = serviceCasesTrack.getBoundingClientRect().left;
+    active = slides.reduce((best, slide, index) => {
+      const distance = Math.abs(slide.getBoundingClientRect().left - left);
+      return distance < best.distance ? { index, distance } : best;
+    }, { index: 0, distance: Infinity }).index;
+    slides.forEach((slide, index) => {
+      slide.classList.toggle('is-active', index === active);
+      const link = slide.querySelector('.svc-project-link');
+      if (link) link.tabIndex = index === active || innerWidth > 760 ? 0 : -1;
+    });
+    current.textContent = String(active + 1).padStart(2, '0');
+    previous.disabled = active === 0;
+    next.disabled = active === slides.length - 1;
+    progress.style.transform = `translateX(${active * 100}%)`;
+    scheduled = false;
+  };
+  const goTo = index => {
+    const slide = slides[Math.max(0, Math.min(slides.length - 1, index))];
+    const left = slide.getBoundingClientRect().left - serviceCasesTrack.getBoundingClientRect().left + serviceCasesTrack.scrollLeft;
+    serviceCasesTrack.scrollTo({ left, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+  };
+  serviceCasesTrack.addEventListener('scroll', () => {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(update);
+  }, { passive: true });
+  serviceCasesTrack.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+    event.preventDefault();
+    goTo(active + (event.key === 'ArrowRight' ? 1 : -1));
+  });
+  previous.addEventListener('click', () => goTo(active - 1));
+  next.addEventListener('click', () => goTo(active + 1));
+  addEventListener('resize', update, { passive: true });
+  update();
 }
 
 document.querySelectorAll('[data-copy]').forEach(button => {
