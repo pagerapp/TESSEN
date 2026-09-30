@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/* The logo lives behind the bento glass; pricing below remains independent of motion. */
+/* The logo lives behind the bento glass; the pricing blueprint is drawn as vectors. */
 .services-rework .svc-hero{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;min-height:calc(100svh - var(--header-height));padding:clamp(22px,3vw,48px) 0;background:radial-gradient(ellipse at 62% 45%,#28171f 0%,#140b11 42%,#09090b 76%)}
 .services-rework .svc-hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#09090b42,transparent 32%,#09090b12 72%,#09090b44),radial-gradient(ellipse at 50% 95%,#ee13491e,transparent 62%)}
 .svc-hero-logo.kinetic-scene{inset:-7% 3% -8% 11%;z-index:0;opacity:.95;mask-image:radial-gradient(ellipse at 55% 49%,#000 43%,#000c 65%,transparent 91%)}
@@ -30,7 +30,13 @@
 .svc-route-price span{color:#f06184;font-size:22px;margin-left:12px;font-weight:400}
 
 .svc-web-section{position:relative;isolation:isolate;overflow:hidden;padding:clamp(64px,7vw,110px) 0 0}
-.svc-web-section::before{content:"";position:absolute;z-index:-1;top:-220px;left:0;width:100%;height:calc(100% + 440px);pointer-events:none;background:url('Assets/Backgrounds/price_background_002.webp') center top / cover no-repeat;transform:translate3d(0,var(--svc-parallax-y,0px),0);will-change:transform}
+.svc-blueprint{position:absolute;z-index:-1;inset:-220px 0;pointer-events:none;background:radial-gradient(ellipse at 69% 19%,#dfd9da52,transparent 48%),radial-gradient(ellipse at 25% 65%,#ebe2e452,transparent 45%);transform:translate3d(0,var(--svc-parallax-y,0px),0);will-change:transform}
+.svc-blueprint svg{display:block;width:100%;height:100%;fill:none}
+.svc-blueprint svg *{vector-effect:non-scaling-stroke}
+.svc-blueprint-fine{stroke:#6b6769;stroke-width:1;opacity:.17}
+.svc-blueprint-line{stroke:#565154;stroke-width:1;opacity:.3}
+.svc-blueprint-accent{fill:#bd1747;opacity:.78}
+.svc-blueprint svg.svc-blueprint-mobile{display:none}
 .svc-section-heading{margin-bottom:clamp(25px,3vw,45px)}
 .svc-section-heading>.micro{display:block;margin-bottom:clamp(22px,2vw,34px);color:#9a1739;text-shadow:0 1px 8px #fff}
 .svc-section-heading>div{max-width:1420px}
@@ -38,9 +44,8 @@
 .svc-section-heading p{font-size:clamp(17px,1.25vw,21px);line-height:1.45;max-width:800px;margin:25px 0 0;color:#292629;text-shadow:0 1px 12px #fffd}
 .svc-web-swipe{display:none}
 .svc-web-list{position:relative;isolation:isolate;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.4vw,24px)}
-.svc-web-list::before{content:"";position:absolute;z-index:-1;inset:10% 5%;pointer-events:none;background:radial-gradient(ellipse at 18% 74%,#d6c4cb52,transparent 40%),radial-gradient(ellipse at 83% 16%,#d2d1d255,transparent 44%);filter:blur(48px)}
 .svc-offer-list{border-top:1px solid #111}
-.svc-web-offer{position:relative;display:flex;flex-direction:column;min-width:0;min-height:clamp(455px,30vw,490px);padding:clamp(23px,1.9vw,30px);overflow:hidden;border:1px solid #ffffffd9;border-radius:20px;background:linear-gradient(145deg,#e2e4e561,#cfd2d441 54%,#e6e7e656);color:#161517;-webkit-backdrop-filter:blur(5px) saturate(.72);backdrop-filter:blur(5px) saturate(.72);box-shadow:0 0 0 1px #2524283a,inset 0 1px 0 #fff,inset 0 -1px 0 #ffffff8a,0 22px 46px #24222621}
+.svc-web-offer{position:relative;display:flex;flex-direction:column;min-width:0;min-height:clamp(455px,30vw,490px);padding:clamp(23px,1.9vw,30px);overflow:hidden;border:1px solid #ffffffd9;border-radius:20px;background:linear-gradient(145deg,#e2e4e561,#cfd2d441 54%,#e6e7e656);color:#161517;-webkit-backdrop-filter:blur(2px) saturate(.8);backdrop-filter:blur(2px) saturate(.8);box-shadow:0 0 0 1px #2524283a,inset 0 1px 0 #fff,inset 0 -1px 0 #ffffff8a,0 22px 46px #24222621}
 .svc-web-offer::before{content:"";position:absolute;top:0;left:8%;width:55%;height:1px;background:linear-gradient(90deg,transparent,#fff,transparent);pointer-events:none}
 .svc-web-offer>.svc-offer-num{color:#c92351;padding:0}
 .svc-offer-num{color:var(--accent);padding-top:6px;white-space:nowrap}
@@ -74,7 +79,7 @@
 .svc-secondary-intro h3{font-size:clamp(42px,4.8vw,78px);line-height:.9;letter-spacing:-.05em;text-transform:uppercase;margin:0;max-width:1000px}
 .svc-secondary-intro p{font-size:clamp(15px,1.2vw,19px);line-height:1.45;color:#373237;max-width:660px;margin:17px 0 0}
 .svc-secondary .svc-offer-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.4vw,24px);border:0}
-.svc-secondary .svc-offer{display:flex;flex-direction:column;align-items:stretch;min-height:clamp(455px,30vw,490px);padding:clamp(23px,1.9vw,30px);border:1px solid #ffffffd9;border-radius:20px;background:linear-gradient(145deg,#e2e4e561,#cfd2d441 54%,#e6e7e656);-webkit-backdrop-filter:blur(5px) saturate(.72);backdrop-filter:blur(5px) saturate(.72);box-shadow:0 0 0 1px #2524283a,inset 0 1px 0 #fff,inset 0 -1px 0 #ffffff8a,0 22px 46px #24222621}
+.svc-secondary .svc-offer{display:flex;flex-direction:column;align-items:stretch;min-height:clamp(455px,30vw,490px);padding:clamp(23px,1.9vw,30px);border:1px solid #ffffffd9;border-radius:20px;background:linear-gradient(145deg,#e2e4e561,#cfd2d441 54%,#e6e7e656);-webkit-backdrop-filter:blur(2px) saturate(.8);backdrop-filter:blur(2px) saturate(.8);box-shadow:0 0 0 1px #2524283a,inset 0 1px 0 #fff,inset 0 -1px 0 #ffffff8a,0 22px 46px #24222621}
 .svc-secondary .svc-offer-num{padding:0;color:#c92351}
 .svc-secondary .svc-offer-copy{margin-top:clamp(35px,4vw,65px)}
 .svc-secondary .svc-offer-copy h3{font-size:clamp(30px,2.85vw,47px);line-height:.91}
@@ -121,7 +126,6 @@
   .svc-web-swipe{display:block;margin:0 0 15px;color:#8f5263;letter-spacing:.12em}
   .svc-web-list{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:clamp(300px,44vw,420px);align-items:stretch;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);overscroll-behavior-inline:contain;scrollbar-width:none;margin-inline:calc(-1 * var(--gutter));padding:0 var(--gutter) 28px}
   .svc-web-list::-webkit-scrollbar{display:none}
-  .svc-web-list::before{display:none}
   .svc-web-offer{min-height:490px;scroll-snap-align:start;scroll-snap-stop:always;box-shadow:0 0 0 1px #2524283a,inset 0 1px 0 #fff,inset 0 -1px 0 #ffffff8a}
   .svc-secondary .svc-offer-list{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:clamp(300px,44vw,420px);align-items:stretch;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);overscroll-behavior-inline:contain;scrollbar-width:none;margin-inline:calc(-1 * var(--gutter));padding:0 var(--gutter) 6px}
   .svc-secondary .svc-offer-list::-webkit-scrollbar{display:none}
@@ -155,7 +159,9 @@
   .svc-route-price{font-size:clamp(11px,1.6vw,13px);padding-top:7px;border-top:1px solid #ffffff24}
   .svc-route-price span{font-size:17px;margin-left:4px}
   .svc-web-section{padding-top:65px}
-  .svc-web-section::before{top:-180px;height:calc(100% + 360px);background-image:url('Assets/Backgrounds/price_mobile_background_002.webp');background-position:center top}
+  .svc-blueprint{inset:-180px 0;background:radial-gradient(ellipse at 50% 20%,#e8e2e344,transparent 48%),radial-gradient(ellipse at 50% 73%,#e7e0e044,transparent 44%)}
+  .svc-blueprint svg.svc-blueprint-wide{display:none}
+  .svc-blueprint svg.svc-blueprint-mobile{display:block}
   .svc-section-heading{margin-bottom:27px}
   .svc-section-heading>.micro{margin-bottom:22px}
   .svc-section-heading h2{font-size:clamp(50px,10.5vw,80px)}
@@ -213,4 +219,4 @@
   .svc-case-copy strong{font-size:36px}
 }
 @media(max-width:350px){.svc-routes{gap:8px}.svc-route{padding:12px}.svc-route-icon{width:104px}.svc-route-bottom{inset:auto 12px 12px;gap:3px}.svc-route strong{font-size:19px}.svc-route[data-service-index="3"] strong{font-size:17px}.svc-route .svc-route-short{font-size:10px;min-height:0}.svc-route-price{padding-top:4px}.svc-web-offer{padding:20px}.svc-web-main h3{font-size:37px}.svc-web-facts{grid-template-columns:1fr 1fr}}
-@media(prefers-reduced-motion:reduce){.svc-route,.svc-route-icon,.svc-case-media img,.svc-web-details summary span{transition:none}.svc-web-section::before{transform:none;will-change:auto}}
+@media(prefers-reduced-motion:reduce){.svc-route,.svc-route-icon,.svc-case-media img,.svc-web-details summary span{transition:none}.svc-blueprint{transform:none;will-change:auto}}

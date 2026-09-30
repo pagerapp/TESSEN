@@ -132,7 +132,7 @@ if (pricingSection) {
     const travel = Math.max(1, caseBlock?.offsetTop || pricingSection.offsetHeight);
     const distance = innerWidth <= 760 ? 420 : 300;
     const offset = distance * Math.min(1, Math.max(0, -bounds.top / travel));
-    pricingSection.style.setProperty('--svc-parallax-y', `${offset.toFixed(1)}px`);
+    pricingSection.style.setProperty('--svc-parallax-y', `${Math.round(offset)}px`);
   };
   const scheduleBackground = () => {
     if (!frame) frame = requestAnimationFrame(updateBackground);
