@@ -116,6 +116,30 @@ if (gallery) {
   update();
 }
 
+const pricingSection = document.querySelector('.svc-web-section');
+if (pricingSection) {
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  let frame = 0;
+  const updateBackground = () => {
+    frame = 0;
+    if (motion.matches) {
+      pricingSection.style.setProperty('--svc-parallax-y', '0px');
+      return;
+    }
+    const bounds = pricingSection.getBoundingClientRect();
+    if (bounds.bottom < 0 || bounds.top > innerHeight) return;
+    const offset = Math.min(100, Math.max(0, -bounds.top * .14));
+    pricingSection.style.setProperty('--svc-parallax-y', `${offset.toFixed(1)}px`);
+  };
+  const scheduleBackground = () => {
+    if (!frame) frame = requestAnimationFrame(updateBackground);
+  };
+  addEventListener('scroll', scheduleBackground, { passive: true });
+  addEventListener('resize', scheduleBackground, { passive: true });
+  motion.addEventListener('change', scheduleBackground);
+  scheduleBackground();
+}
+
 document.querySelectorAll('[data-copy]').forEach(button => {
   button.addEventListener('click', async () => {
     let copied = false;
