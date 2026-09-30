@@ -30,7 +30,7 @@
 .svc-route-price span{color:#f06184;font-size:22px;margin-left:12px;font-weight:400}
 
 .svc-web-section{position:relative;isolation:isolate;overflow:hidden;padding:clamp(64px,7vw,110px) 0 0}
-.svc-web-section::before{content:"";position:absolute;z-index:-1;top:0;left:0;width:100%;height:55.7vw;pointer-events:none;background:url('Assets/Backgrounds/price_background_002.webp') center top / 100% auto no-repeat;mask-image:linear-gradient(#000 0 78%,transparent 100%);transform:translate3d(0,var(--svc-parallax-y,0px),0);will-change:transform}
+.svc-web-section::before{content:"";position:absolute;z-index:-1;top:-220px;left:0;width:100%;height:calc(100% + 440px);pointer-events:none;background:url('Assets/Backgrounds/price_background_002.webp') center top / cover no-repeat;transform:translate3d(0,var(--svc-parallax-y,0px),0);will-change:transform}
 .svc-section-heading{margin-bottom:clamp(25px,3vw,45px)}
 .svc-section-heading>.micro{display:block;margin-bottom:clamp(22px,2vw,34px);color:#9a1739;text-shadow:0 1px 8px #fff}
 .svc-section-heading>div{max-width:1420px}
@@ -68,9 +68,20 @@
 .svc-detail-link{justify-self:start;display:inline-flex;min-height:44px;align-items:center;border-bottom:1px solid currentColor;font-size:13px;font-weight:700}
 .svc-detail-link:hover{color:var(--accent)}
 
-.svc-secondary{display:grid;grid-template-columns:minmax(180px,.35fr) minmax(0,1fr);gap:clamp(45px,5vw,90px);margin:clamp(85px,9vw,150px) 0 0}
-.svc-secondary-intro h3{font-size:clamp(33px,3.4vw,54px);line-height:.96;letter-spacing:-.035em;text-transform:uppercase;margin:20px 0 15px}
-.svc-secondary-intro p{font-size:15px;line-height:1.5;color:#64615f;max-width:280px;margin:0}
+.svc-secondary{margin:clamp(85px,9vw,150px) 0 0}
+.svc-secondary-intro{margin-bottom:clamp(25px,3vw,45px)}
+.svc-secondary-intro .micro{display:block;margin-bottom:clamp(22px,2vw,34px)}
+.svc-secondary-intro h3{font-size:clamp(42px,4.8vw,78px);line-height:.9;letter-spacing:-.05em;text-transform:uppercase;margin:0;max-width:1000px}
+.svc-secondary-intro p{font-size:clamp(15px,1.2vw,19px);line-height:1.45;color:#373237;max-width:660px;margin:17px 0 0}
+.svc-secondary .svc-offer-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(12px,1.4vw,24px);border:0}
+.svc-secondary .svc-offer{display:flex;flex-direction:column;align-items:stretch;min-height:clamp(455px,30vw,490px);padding:clamp(23px,1.9vw,30px);border:1px solid #ffffffd9;border-radius:20px;background:linear-gradient(145deg,#e2e4e561,#cfd2d441 54%,#e6e7e656);-webkit-backdrop-filter:blur(5px) saturate(.72);backdrop-filter:blur(5px) saturate(.72);box-shadow:0 0 0 1px #2524283a,inset 0 1px 0 #fff,inset 0 -1px 0 #ffffff8a,0 22px 46px #24222621}
+.svc-secondary .svc-offer-num{padding:0;color:#c92351}
+.svc-secondary .svc-offer-copy{margin-top:clamp(35px,4vw,65px)}
+.svc-secondary .svc-offer-copy h3{font-size:clamp(30px,2.85vw,47px);line-height:.91}
+.svc-secondary .svc-offer-copy p{font-size:15px;max-width:380px;color:#4a484a;margin-top:15px}
+.svc-secondary .svc-offer .svc-price{align-self:flex-start;margin-top:auto;padding-top:22px;text-align:left;font-size:clamp(25px,2.35vw,37px);letter-spacing:-.035em}
+.svc-secondary .svc-offer-action{align-self:stretch;justify-self:auto;justify-content:space-between;align-items:center;width:100%;margin:17px 0 0;padding:0;min-height:55px;border:0;border-top:1px solid #24222640}
+.svc-secondary .svc-offer-action svg{width:20px;height:20px;flex:none;color:var(--accent)}
 .svc-offer{display:grid;grid-template-columns:56px minmax(0,1fr) minmax(110px,.3fr) 90px;gap:clamp(14px,1.8vw,30px);align-items:start;border-bottom:1px solid #bdbbb5;padding:25px 0 27px}
 .svc-offer-copy h3{font-size:clamp(27px,2.5vw,42px)}
 .svc-offer-copy p{max-width:540px}
@@ -111,7 +122,10 @@
   .svc-web-list{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:clamp(300px,44vw,420px);align-items:stretch;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);overscroll-behavior-inline:contain;scrollbar-width:none;margin-inline:calc(-1 * var(--gutter));padding:0 var(--gutter) 28px}
   .svc-web-list::-webkit-scrollbar{display:none}
   .svc-web-list::before{display:none}
-  .svc-web-offer{min-height:490px;scroll-snap-align:start;scroll-snap-stop:always}
+  .svc-web-offer{min-height:490px;scroll-snap-align:start;scroll-snap-stop:always;box-shadow:0 0 0 1px #2524283a,inset 0 1px 0 #fff,inset 0 -1px 0 #ffffff8a}
+  .svc-secondary .svc-offer-list{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:clamp(300px,44vw,420px);align-items:stretch;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:var(--gutter);overscroll-behavior-inline:contain;scrollbar-width:none;margin-inline:calc(-1 * var(--gutter));padding:0 var(--gutter) 6px}
+  .svc-secondary .svc-offer-list::-webkit-scrollbar{display:none}
+  .svc-secondary .svc-offer{scroll-snap-align:start;scroll-snap-stop:always;box-shadow:0 0 0 1px #2524283a,inset 0 1px 0 #fff,inset 0 -1px 0 #ffffff8a}
 }
 @media(max-width:900px){
   .services-rework .svc-hero{min-height:auto}
@@ -141,6 +155,7 @@
   .svc-route-price{font-size:clamp(11px,1.6vw,13px);padding-top:7px;border-top:1px solid #ffffff24}
   .svc-route-price span{font-size:17px;margin-left:4px}
   .svc-web-section{padding-top:65px}
+  .svc-web-section::before{top:-180px;height:calc(100% + 360px);background-image:url('Assets/Backgrounds/price_mobile_background_002.webp');background-position:center top}
   .svc-section-heading{margin-bottom:27px}
   .svc-section-heading>.micro{margin-bottom:22px}
   .svc-section-heading h2{font-size:clamp(50px,10.5vw,80px)}
@@ -154,10 +169,14 @@
   .svc-web-facts{gap:12px;margin-top:20px;padding-top:17px}
   .svc-web-facts dd{font-size:12px}
   .svc-web-details{margin-top:18px}
-  .svc-secondary{display:block;margin-top:80px}
-  .svc-secondary-intro{margin-bottom:27px}
+  .svc-secondary{margin-top:80px}
+  .svc-secondary-intro{display:block;margin-bottom:27px}
   .svc-secondary-intro h3{font-size:41px}
   .svc-secondary-intro p{max-width:500px}
+  .svc-secondary .svc-offer-list{grid-auto-columns:min(82vw,360px)}
+  .svc-secondary .svc-offer{min-height:430px;padding:24px}
+  .svc-secondary .svc-offer-copy{margin-top:54px}
+  .svc-secondary .svc-offer .svc-price{grid-column:auto;grid-row:auto;font-size:30px;padding-top:20px}
   .svc-offer{grid-template-columns:minmax(0,1fr) auto;gap:0 16px;padding:22px 0 21px}
   .svc-offer-num{grid-column:1 / -1;margin-bottom:13px}
   .svc-offer-copy{grid-column:1;grid-row:2}

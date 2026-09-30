@@ -128,7 +128,10 @@ if (pricingSection) {
     }
     const bounds = pricingSection.getBoundingClientRect();
     if (bounds.bottom < 0 || bounds.top > innerHeight) return;
-    const offset = Math.min(100, Math.max(0, -bounds.top * .14));
+    const caseBlock = pricingSection.querySelector('.svc-case');
+    const travel = Math.max(1, caseBlock?.offsetTop || pricingSection.offsetHeight);
+    const distance = innerWidth <= 760 ? 420 : 300;
+    const offset = distance * Math.min(1, Math.max(0, -bounds.top / travel));
     pricingSection.style.setProperty('--svc-parallax-y', `${offset.toFixed(1)}px`);
   };
   const scheduleBackground = () => {

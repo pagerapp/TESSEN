@@ -11,6 +11,7 @@ for (const folder of ['work', 'services', 'services-concept', 'about', 'contact'
 for (const file of ['icon_4.webp', 'tessen_wordmark_accent.webp', 'tessen_wordmark_white.webp', 'fan.svg']) cpSync(join('Assets/Logo', file), join(output, 'Assets/Logo', file));
 for (const file of ['website_v3.webp', 'brand_v3.webp', 'media_v3.webp', 'automation_v3.webp', 'idea.webp']) cpSync(join('Assets/icons', file), join(output, 'Assets/icons', file));
 cpSync('Assets/Backgrounds/price_background_002.webp', join(output, 'Assets/Backgrounds/price_background_002.webp'));
+cpSync('Assets/Backgrounds/price_mobile_background_002.webp', join(output, 'Assets/Backgrounds/price_mobile_background_002.webp'));
 if (existsSync('sitemap.xml')) cpSync('sitemap.xml', join(output, 'sitemap.xml'));
 
 mkdirSync(join(output, 'vendor/three'), { recursive: true });
