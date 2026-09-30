@@ -116,13 +116,13 @@
   .svc-hero-copy h1{font-size:clamp(40px,10.8vw,62px);line-height:.9;margin-bottom:20px}
   .svc-hero-copy p{font-size:17px;max-width:550px}
   .svc-routes{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,auto);grid-auto-rows:auto;gap:10px}
-  .svc-route{display:flex;flex-direction:column;align-items:stretch;min-height:clamp(250px,42vw,310px);padding:17px}
+  .svc-route{display:flex;flex-direction:column;align-items:stretch;aspect-ratio:1;min-height:0;padding:17px}
   .svc-route-id{font-size:9px;white-space:nowrap}
-  .svc-route-icon{width:clamp(112px,24vw,164px);top:-6px;right:-14px;opacity:1;filter:brightness(1.27) contrast(1.06) drop-shadow(0 8px 15px #eb17403d)}
-  .svc-route-bottom{display:grid;grid-template-rows:auto auto auto;align-content:end;gap:7px;margin-top:auto}
-  .svc-route strong{font-size:clamp(22px,5vw,31px);line-height:.91;letter-spacing:-.025em}
+  .svc-route-icon{width:clamp(112px,24vw,164px);top:clamp(10px,2vw,17px);right:clamp(10px,2vw,17px);opacity:1;filter:brightness(1.27) contrast(1.06) drop-shadow(0 8px 15px #eb17403d)}
+  .svc-route-bottom{position:absolute;inset:auto 17px 17px;width:auto;display:grid;grid-template-rows:auto auto auto;align-content:end;gap:4px;margin-top:0}
+  .svc-route strong{font-size:clamp(22px,5vw,31px);line-height:.91;letter-spacing:-.025em;text-shadow:0 1px 7px #09090b,0 0 14px #09090b}
   .svc-route .svc-route-detail{display:none}
-  .svc-route .svc-route-short{display:block;font-size:clamp(11px,1.7vw,13px);line-height:1.32;min-height:2.6em}
+  .svc-route .svc-route-short{display:block;font-size:clamp(11px,1.7vw,13px);line-height:1.32;min-height:2.6em;text-shadow:0 1px 6px #09090b,0 0 12px #09090b}
   .svc-route-price{font-size:clamp(11px,1.6vw,13px);padding-top:7px;border-top:1px solid #ffffff24}
   .svc-route-price span{font-size:17px;margin-left:4px}
   .svc-web-section{padding-top:65px}
@@ -170,6 +170,7 @@
   .svc-web-main h3{font-size:30px}
   .svc-offer-copy h3{font-size:27px}
   .svc-route{padding:14px}
+  .svc-route-bottom{inset:auto 14px 14px}
   .svc-route strong{font-size:22px}
   .svc-route-price{font-size:11px}
   .svc-category#automation h2{font-size:34px}
@@ -177,5 +178,5 @@
   .svc-extras .extras-row strong{white-space:normal;overflow-wrap:anywhere}
   .svc-case-copy strong{font-size:36px}
 }
-@media(max-width:350px){.svc-routes{gap:8px}.svc-route{padding:12px;min-height:250px}.svc-route-icon{width:104px;top:-6px;right:-14px}.svc-route strong{font-size:20px}.svc-route .svc-route-short{font-size:10px}}
+@media(max-width:350px){.svc-routes{gap:8px}.svc-route{padding:12px}.svc-route-icon{width:104px}.svc-route-bottom{inset:auto 12px 12px;gap:3px}.svc-route strong{font-size:19px}.svc-route[data-service-index="3"] strong{font-size:17px}.svc-route .svc-route-short{font-size:10px;min-height:0}.svc-route-price{padding-top:4px}}
 @media(prefers-reduced-motion:reduce){.svc-route,.svc-route-icon,.svc-case-media img,.svc-web-details summary span{transition:none}}
