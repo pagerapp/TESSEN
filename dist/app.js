@@ -142,18 +142,18 @@ if (pricingSection) {
   scheduleBackground();
 }
 
-const serviceCasesTrack = document.querySelector('#svc-cases-track');
-if (serviceCasesTrack) {
-  const slides = [...serviceCasesTrack.querySelectorAll('.svc-project')];
-  const previous = document.querySelector('[data-svc-case-prev]');
-  const next = document.querySelector('[data-svc-case-next]');
-  const current = document.querySelector('[data-svc-case-current]');
-  const progress = document.querySelector('.svc-cases-progress span');
+document.querySelectorAll('[data-svc-carousel]').forEach(carousel => {
+  const track = carousel.querySelector('.svc-cases-track');
+  const slides = [...track.querySelectorAll('.svc-project')];
+  const previous = carousel.querySelector('[data-svc-case-prev]');
+  const next = carousel.querySelector('[data-svc-case-next]');
+  const current = carousel.querySelector('[data-svc-case-current]');
+  const progress = carousel.querySelector('.svc-cases-progress span');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let active = 0;
   let scheduled = false;
   const update = () => {
-    const left = serviceCasesTrack.getBoundingClientRect().left;
+    const left = track.getBoundingClientRect().left;
     active = slides.reduce((best, slide, index) => {
       const distance = Math.abs(slide.getBoundingClientRect().left - left);
       return distance < best.distance ? { index, distance } : best;
@@ -164,22 +164,22 @@ if (serviceCasesTrack) {
       if (link) link.tabIndex = index === active || innerWidth > 760 ? 0 : -1;
     });
     current.textContent = String(active + 1).padStart(2, '0');
-    previous.disabled = active === 0;
-    next.disabled = active === slides.length - 1;
+    previous.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
     progress.style.transform = `translateX(${active * 100}%)`;
     scheduled = false;
   };
   const goTo = index => {
     const slide = slides[Math.max(0, Math.min(slides.length - 1, index))];
-    const left = slide.getBoundingClientRect().left - serviceCasesTrack.getBoundingClientRect().left + serviceCasesTrack.scrollLeft;
-    serviceCasesTrack.scrollTo({ left, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+    const left = slide.getBoundingClientRect().left - track.getBoundingClientRect().left + track.scrollLeft;
+    track.scrollTo({ left, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
   };
-  serviceCasesTrack.addEventListener('scroll', () => {
+  track.addEventListener('scroll', () => {
     if (scheduled) return;
     scheduled = true;
     requestAnimationFrame(update);
   }, { passive: true });
-  serviceCasesTrack.addEventListener('keydown', event => {
+  track.addEventListener('keydown', event => {
     if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
     event.preventDefault();
     goTo(active + (event.key === 'ArrowRight' ? 1 : -1));
@@ -188,7 +188,7 @@ if (serviceCasesTrack) {
   next.addEventListener('click', () => goTo(active + 1));
   addEventListener('resize', update, { passive: true });
   update();
-}
+});
 
 document.querySelectorAll('[data-copy]').forEach(button => {
   button.addEventListener('click', async () => {
