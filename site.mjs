@@ -26,7 +26,7 @@ const standaloneWordmark = '<img class="standalone-wordmark" src="/Assets/Logo/t
 
 const projects = [
   {
-    slug: 'questcenter', index: '01', title: 'QUESTCENTER', category: 'Digital / Brand', tags: 'UX/UI · Платформа бронирования · Айдентика', label: 'Платформа поиска и бронирования квестов', cover: 'questcenter-1',
+    slug: 'questcenter', index: '01', title: 'QUESTCENTER', category: 'Digital / Brand', workCategories: ['digital', 'brand'], tags: 'UX/UI · Платформа бронирования · Айдентика', label: 'Платформа поиска и бронирования квестов', cover: 'questcenter-1',
     description: 'Каталог, карточки квестов и сценарий бронирования в одной цифровой системе.',
     overview: 'QUESTCENTER — платформа, где выбор квеста превращается в понятный маршрут: от первого просмотра каталога до выбора даты и времени.',
     challenge: 'Большой ассортимент, разные сценарии выбора и множество состояний интерфейса требовали ясной структуры. Посетителю нужно быстро понять, какой квест подходит, и без лишних шагов перейти к записи.',
@@ -42,7 +42,7 @@ const projects = [
     ],
   },
   {
-    slug: 'pager', index: '02', title: 'PAGER', category: 'Digital / Content', tags: 'Digital product · Сайт · Визуальная система', label: 'Цифровой продукт и система его представления', cover: 'pager-mobile',
+    slug: 'pager', index: '02', title: 'PAGER', category: 'Digital / Content', workCategories: ['digital'], tags: 'Digital product · Сайт · Визуальная система', label: 'Цифровой продукт и система его представления', cover: 'pager-mobile',
     description: 'Многопрофильный продукт и визуальный язык для его цифровой презентации.',
     overview: 'PAGER исследует идею нескольких пространств общения внутри одного аккаунта. Материалы показывают продуктовую логику через сайт, интерфейсные сцены и мобильные композиции.',
     challenge: 'Сложную продуктовую идею важно объяснить без перегрузки. Сайт должен последовательно показать сценарии использования и при этом сохранить характер самого продукта.',
@@ -59,7 +59,7 @@ const projects = [
     ],
   },
   {
-    slug: 'quest-hero', index: '03', title: 'QUEST HERO', category: 'Digital', tags: 'Сайт · Структура · Адаптивный интерфейс', label: 'Сайт для мира приключений', cover: 'quest-hero-1',
+    slug: 'quest-hero', index: '03', title: 'QUEST HERO', category: 'Digital', workCategories: ['digital'], tags: 'Сайт · Структура · Адаптивный интерфейс', label: 'Сайт для мира приключений', cover: 'quest-hero-1',
     description: 'Цифровая подача квестов, событий и программ в одной системе.',
     overview: 'QUEST HERO — сайт о квестах, мастер-классах и событиях. Материалы показывают несколько направлений и детальные страницы отдельных программ.',
     challenge: 'Разные форматы досуга нужно собрать в понятную навигацию, сохранив атмосферу каждого предложения и удобный путь к деталям.',
@@ -76,15 +76,15 @@ const projects = [
     ],
   },
   {
-    slug: 'tramp', index: '04', title: 'TRAMP', category: 'Content', tags: 'Визуальный контент · Серия изображений', label: 'Визуальная серия для российской компании', cover: '/Assets/TRAMP/tramp-01.webp',
+    slug: 'tramp', index: '04', title: 'TRAMP', category: 'Content', workCategories: ['visuals'], tags: 'Визуальный контент · Серия изображений', label: 'Визуальная серия для российской компании', cover: '/Assets/TRAMP/tramp-01.webp',
     description: 'Около 150 визуалов для разных задач — от маршрута до предметных деталей.',
   },
   {
-    slug: 'mitek', index: '05', title: 'МИТЕК', category: 'Content', tags: 'Визуальный контент · Серия изображений', label: 'Визуальная серия для производителя', cover: '/Assets/MITEK/mitek-011.jpg',
+    slug: 'mitek', index: '05', title: 'МИТЕК', category: 'Content', workCategories: ['visuals'], tags: 'Визуальный контент · Серия изображений', label: 'Визуальная серия для производителя', cover: '/Assets/MITEK/mitek-011.jpg',
     description: 'Около 60 визуалов: павильоны и сумки в разных условиях использования.',
   },
   {
-    slug: 'lpaoletti', index: '06', title: 'L.PAOLETTI', category: 'Content', tags: 'Визуальный контент · Серия изображений', label: 'Визуальная серия для производителя детской мебели ручной работы', cover: '/Assets/LPAOLETTI/Hero_img.webp',
+    slug: 'lpaoletti', index: '06', title: 'L.PAOLETTI', category: 'Content', workCategories: ['visuals'], tags: 'Визуальный контент · Серия изображений', label: 'Визуальная серия для производителя детской мебели ручной работы', cover: '/Assets/LPAOLETTI/Hero_img.webp',
     description: 'Около 15 визуалов для нескольких продуктов: интерьеры, семейные сцены и детали ручной работы.',
   },
 ];
@@ -122,6 +122,22 @@ function projectTeaser(project, mode = '', headingLevel = 3) {
   const visual = project.slug === 'tramp' ? trampTeaserVisual : project.slug === 'mitek' ? mitekTeaserVisual : project.slug === 'lpaoletti' ? lpaolettiTeaserVisual : pic(project.cover, alt);
   return `<article class="project-teaser ${mode}" data-category="${project.category.toLowerCase()}"><a class="project-visual" href="/work/${project.slug}/" aria-label="Открыть проект ${project.title}">${visual}<span class="visual-action">Смотреть проект ${arrow}</span></a><div class="project-meta"><span class="project-number">${project.index} / ${String(projects.length).padStart(2, '0')}</span><div><h${headingLevel}><a href="/work/${project.slug}/">${project.title}</a></h${headingLevel}><p>${project.description}</p></div><span class="project-category">${project.category}</span></div></article>`;
 }
+
+const workPreviewImages = { tramp: 'content_tramp_preview.webp', mitek: 'content_mitek_preview.webp', lpaoletti: 'content_lpaoletti_preview.webp' };
+const workPreviewAlts = {
+  tramp: 'Подборка визуалов TRAMP: походное и зимнее снаряжение',
+  mitek: 'Подборка визуалов МИТЕК: павильоны и сумки для отдыха',
+  lpaoletti: 'Подборка визуалов L.PAOLETTI: плетёная колыбель в интерьере и детали изготовления',
+};
+const projectCard = project => {
+  const alt = `${project.title}: ${project.label.toLowerCase()}`;
+  const preview = workPreviewImages[project.slug];
+  const visual = preview
+    ? `<img src="/Assets/PORTFOLIO/${preview}" width="627" height="627" alt="${esc(workPreviewAlts[project.slug])}" loading="lazy" decoding="async">`
+    : pic(project.cover, alt);
+  const categories = project.workCategories.join(',');
+  return `<article class="work-card" data-category="${categories}"><a class="work-card-image" href="/work/${project.slug}/" aria-label="Открыть проект ${project.title}">${visual}<span class="work-card-open" aria-hidden="true">${arrow}</span></a><div class="work-card-meta"><span class="micro">${project.index} / ${String(projects.length).padStart(2, '0')}</span><span class="micro">${project.category}</span></div><h3><a href="/work/${project.slug}/">${project.title}</a></h3><p>${project.description}</p></article>`;
+};
 
 function gallerySlide(project) {
   return `<article class="gallery-slide"><a class="gallery-slide-media" href="/work/${project.slug}/" aria-label="Открыть проект ${project.title}">${pic(project.cover, `${project.title}: ${project.label.toLowerCase()}`)}<span class="gallery-open">Смотреть кейс ${arrow}</span></a><div class="gallery-slide-caption"><span class="gallery-slide-index">${project.index} / 03</span><div><h3><a href="/work/${project.slug}/">${project.title}</a></h3><p>${project.description}</p></div><span class="gallery-slide-category">${project.category}</span></div></article>`;
@@ -245,7 +261,22 @@ const home = shell({ title: 'TESSEN', path: '/', description: 'TESSEN — нез
 <section class="manifesto light-section section-pad"><div class="container manifesto-grid"><div class="micro">03 / ПОДХОД<br>${mark}</div><div><p class="manifesto-lead">Не останавливаемся на красивом макете.</p><p>Соединяем задачу, структуру и визуальный язык. Проектируем то, что можно использовать, развивать и запускать.</p>${link('/about/', 'О студии')}</div></div></section>
 <section class="process dark-section section-pad"><div class="container">${sectionHead('04', 'PROCESS', 'От первого разговора<br>до запуска.')}<div class="process-list">${[['01','Задача','Разбираемся в контексте, аудитории и ограничениях.'],['02','Структура','Собираем логику и путь пользователя.'],['03','Концепция','Находим визуальное направление и систему.'],['04','Реализация','Доводим экраны, материалы и детали.'],['05','Запуск','Готовим результат к работе в реальной среде.']].map(row=>`<div class="process-row"><span>${row[0]}</span><h3>${row[1]}</h3><p>${row[2]}</p></div>`).join('')}</div></div></section>` });
 
-const work = shell({ title: 'Работы', current: 'work', path: '/work/', description: 'Избранные проекты TESSEN: цифровые продукты, сайты, брендинг и визуальный контент.', body: `<section class="page-intro dark-section"><div class="container"><div class="page-eyebrow micro"><span class="accent">INDEX / 001</span><span>АРХИВ ПРОЕКТОВ</span></div><h1>РАБОТЫ<span class="punct">.</span></h1><div class="intro-bottom"><p>Разные задачи. Один принцип: сначала понять, что должно работать — затем найти точную форму.</p><span class="micro">06 ПРОЕКТОВ</span></div></div></section><section class="work-archive light-section section-pad"><div class="container"><div class="filter-bar" role="group" aria-label="Фильтр проектов"><button type="button" class="is-active" data-filter="all" aria-pressed="true">Все <sup>06</sup></button><button type="button" data-filter="digital" aria-pressed="false">Digital <sup>03</sup></button><button type="button" data-filter="brand" aria-pressed="false">Brand <sup>01</sup></button><button type="button" data-filter="content" aria-pressed="false">Content <sup>03</sup></button></div><div class="archive-list">${projects.map((p, i)=>projectTeaser(p, i === 0 ? 'teaser-featured' : i % 2 ? 'teaser-offset' : 'teaser-wide', 2)).join('')}</div></div></section>` });
+const featuredProjects = ['questcenter', 'tramp'].map(slug => projects.find(project => project.slug === slug)).filter(Boolean);
+const workFilters = [
+  ['all', 'Все'],
+  ['digital', 'Сайты и продукты'],
+  ['brand', 'Брендинг'],
+  ['visuals', 'Визуалы'],
+];
+const projectHasCategory = (project, category) => category === 'all' || project.workCategories.includes(category);
+const workFilterButtons = workFilters.map(([category, label]) => `<button type="button" ${category === 'all' ? 'class="is-active"' : ''} data-filter="${category}" aria-pressed="${category === 'all'}">${label} <sup>${String(projects.filter(project => projectHasCategory(project, category)).length).padStart(2, '0')}</sup></button>`).join('');
+const work = shell({
+  title: 'Работы', current: 'work', path: '/work/', bodyClass: 'work-hub', stylesheet: '/work.css',
+  description: 'Проекты TESSEN: цифровые продукты, сайты, брендинг и визуальный контент.',
+  body: `<section class="page-intro dark-section"><div class="container"><div class="page-eyebrow micro"><span class="accent">INDEX / 001</span><span>ПРОЕКТЫ TESSEN</span></div><h1>РАБОТЫ<span class="punct">.</span></h1><div class="intro-bottom"><p>Разные задачи. Один принцип: сначала понять, что должно работать — затем найти точную форму.</p><div class="work-intro-actions"><span class="micro"><strong>${String(projects.length).padStart(2, '0')}</strong> ПРОЕКТОВ</span><a href="#projects">Все проекты ${arrow}</a></div></div></div></section>
+  <section class="work-featured light-section" aria-labelledby="work-featured-title"><div class="container"><div class="work-section-head"><span class="micro accent">01 / В ФОКУСЕ</span><div><h2 id="work-featured-title">Избранное<span class="punct">.</span></h2><p>Проекты, которые показывают разные стороны работы TESSEN.</p></div></div><div class="work-featured-grid">${featuredProjects.map(project => projectTeaser(project, 'work-featured-card')).join('')}</div></div></section>
+  <section class="work-catalog light-section" id="projects" aria-labelledby="work-catalog-title"><div class="container"><div class="work-section-head"><span class="micro accent">02 / АРХИВ</span><div><h2 id="work-catalog-title">Каталог проектов<span class="punct">.</span></h2><p>Все работы по направлениям — от цифровых продуктов до визуальных серий.</p></div></div><div class="filter-bar" role="group" aria-label="Фильтр проектов">${workFilterButtons}</div><div class="work-catalog-grid">${projects.map(projectCard).join('')}</div></div></section>`,
+});
 
 function casePage(project, next) {
   if (project.slug === 'tramp') return shell({ title: 'TRAMP', path: '/work/tramp/', current: 'work', description: 'TRAMP — визуальная серия для российской компании. Около 150 визуалов для разных задач.', image: project.cover, bodyClass: 'tramp-case-page', stylesheet: '/tramp-case.css', kinetic: false, body: trampCaseBody(next, arrow, projects.length) });

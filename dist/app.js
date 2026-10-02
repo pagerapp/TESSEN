@@ -54,7 +54,7 @@ if (founderBadge) {
 }
 
 const filterButtons = [...document.querySelectorAll('[data-filter]')];
-const projectCards = [...document.querySelectorAll('.archive-list .project-teaser')];
+const projectCards = [...document.querySelectorAll('.work-catalog-grid .work-card')];
 filterButtons.forEach(button => button.addEventListener('click', () => {
   const filter = button.dataset.filter;
   filterButtons.forEach(item => {
@@ -63,7 +63,7 @@ filterButtons.forEach(button => button.addEventListener('click', () => {
     item.setAttribute('aria-pressed', String(active));
   });
   projectCards.forEach(card => {
-    card.hidden = filter !== 'all' && !card.dataset.category.includes(filter);
+    card.hidden = filter !== 'all' && !card.dataset.category.split(',').includes(filter);
   });
 }));
 
