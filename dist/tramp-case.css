@@ -98,4 +98,4 @@
 .lpaoletti-case .tramp-hero-image img{height:auto;aspect-ratio:16/9;object-fit:cover}
 .lpaoletti-case .tramp-frame img{aspect-ratio:4/3}
 .lpaoletti-case #lpaoletti-details-track .tramp-frame img{aspect-ratio:1}
-@media(max-width:700px){.lpaoletti-case .tramp-hero h1{font-size:clamp(46px,10vw,74px);margin-top:42px}.lpaoletti-case .tramp-hero-image img{aspect-ratio:16/9}}
+@media(max-width:700px){.lpaoletti-case .tramp-hero-grid{align-items:stretch}.lpaoletti-case .tramp-hero h1{font-size:clamp(46px,10vw,74px);margin-top:42px}.lpaoletti-case .tramp-hero-image img{aspect-ratio:16/9}}

@@ -134,7 +134,7 @@
 .svc-category#brand .svc-category-grid{padding-bottom:clamp(35px,4vw,65px)}
 .svc-brand-cases{margin-top:0}
 .svc-brand-cases .svc-project-image img{aspect-ratio:1}
-.svc-brand-cases .svc-cases-progress span{width:20%}
+.svc-brand-cases .svc-cases-progress span{width:16.667%}
 
 .services-rework .svc-catalog{padding-top:clamp(24px,3vw,48px)}
 .svc-category{scroll-margin-top:20px}
