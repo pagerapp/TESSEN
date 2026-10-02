@@ -190,6 +190,47 @@ document.querySelectorAll('[data-svc-carousel]').forEach(carousel => {
   update();
 });
 
+document.querySelectorAll('[data-tramp-gallery]').forEach(gallery => {
+  const track = gallery.querySelector('.tramp-track');
+  const frames = [...track.querySelectorAll('.tramp-frame')];
+  const previous = gallery.querySelector('[data-tramp-prev]');
+  const next = gallery.querySelector('[data-tramp-next]');
+  const current = gallery.querySelector('[data-tramp-current]');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let active = 0;
+  let scheduled = false;
+  const update = () => {
+    const left = track.getBoundingClientRect().left;
+    active = frames.reduce((best, frame, index) => {
+      const distance = Math.abs(frame.getBoundingClientRect().left - left);
+      return distance < best.distance ? { index, distance } : best;
+    }, { index: 0, distance: Infinity }).index;
+    current.textContent = String(active + 1).padStart(2, '0');
+    previous.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+    scheduled = false;
+  };
+  const goTo = index => {
+    const frame = frames[Math.max(0, Math.min(frames.length - 1, index))];
+    const left = frame.getBoundingClientRect().left - track.getBoundingClientRect().left + track.scrollLeft;
+    track.scrollTo({ left, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+  };
+  track.addEventListener('scroll', () => {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(update);
+  }, { passive: true });
+  track.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+    event.preventDefault();
+    goTo(active + (event.key === 'ArrowRight' ? 1 : -1));
+  });
+  previous.addEventListener('click', () => goTo(active - 1));
+  next.addEventListener('click', () => goTo(active + 1));
+  addEventListener('resize', update, { passive: true });
+  update();
+});
+
 document.querySelectorAll('[data-copy]').forEach(button => {
   button.addEventListener('click', async () => {
     let copied = false;
