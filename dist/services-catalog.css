@@ -334,17 +334,21 @@
 
 .services-rework #content .svc-category-grid{padding-bottom:clamp(35px,4vw,65px)}
 .services-rework .svc-visual-cases{margin-top:0;padding-top:clamp(18px,2vw,28px)}
-.svc-visual-cases .svc-cases-track{grid-auto-flow:unset;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,2vw,32px);overflow:visible;padding:0}
-.svc-visual-cases .svc-project{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:clamp(16px,2vw,28px);align-items:start;scroll-snap-align:none}
+.svc-visual-cases .svc-cases-track{grid-auto-flow:unset;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(18px,2vw,32px);overflow:visible;padding:0}
+.svc-visual-cases .svc-project{display:grid;grid-template-columns:1fr;gap:15px;align-items:start;scroll-snap-align:none}
 .svc-visual-cases .svc-project-image{display:block}
 .svc-visual-cases .svc-project-image img{aspect-ratio:1;object-fit:cover}
-.svc-visual-cases .svc-project-caption{display:flex;flex-direction:column;align-self:stretch;margin:0;padding:0;border:0;opacity:1!important;pointer-events:auto!important}
-.svc-visual-cases .svc-project-detail{margin-top:auto;padding-top:20px}
-@media(max-width:1050px){
-  .svc-visual-cases .svc-project{grid-template-columns:1fr;gap:15px}
-  .svc-visual-cases .svc-project-caption{border-top:1px solid #9e999a;padding-top:14px}
-  .svc-visual-cases .svc-project-detail{margin-top:12px;padding-top:0}
+.svc-visual-cases .svc-project-caption{display:flex;flex-direction:column;align-self:stretch;margin:0;padding:14px 0 0;border:0;border-top:1px solid #9e999a;opacity:1!important;pointer-events:auto!important}
+.svc-visual-cases .svc-project-detail{margin-top:12px;padding-top:0}
+.svc-visual-cases .svc-cases-nav{display:none}
+.svc-visual-cases .svc-cases-progress{display:none}
+@media(max-width:1050px) and (min-width:701px){
+  .svc-visual-cases .svc-cases-track{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:700px){
-  .svc-visual-cases .svc-cases-track{grid-template-columns:1fr;gap:32px}
+  .svc-visual-cases .svc-cases-nav{display:flex}
+  .svc-visual-cases .svc-cases-track{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:86%;gap:12px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;padding:0 14% 8px 0}
+  .svc-visual-cases .svc-project{scroll-snap-align:start}
+  .svc-visual-cases .svc-cases-progress{display:block}
+  .svc-visual-cases .svc-cases-progress span{width:33.333%}
 }

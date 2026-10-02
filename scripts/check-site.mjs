@@ -2,7 +2,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const base = existsSync('dist/index.html') ? 'dist' : '.';
-const originals = ['index.html', 'work/index.html', 'work/questcenter/index.html', 'work/pager/index.html', 'work/quest-hero/index.html', 'work/tramp/index.html', 'work/mitek/index.html', 'services/index.html', 'services-concept/index.html', 'about/index.html', 'contact/index.html'];
+const originals = ['index.html', 'work/index.html', 'work/questcenter/index.html', 'work/pager/index.html', 'work/quest-hero/index.html', 'work/tramp/index.html', 'work/mitek/index.html', 'work/lpaoletti/index.html', 'services/index.html', 'services-concept/index.html', 'about/index.html', 'contact/index.html'];
 const routes = ['', 'en/', 'zh/'].flatMap(prefix => originals.map(route => prefix + route));
 const errors = [];
 for (const route of routes) {
