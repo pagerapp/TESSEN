@@ -53,19 +53,48 @@ if (founderBadge) {
   }
 }
 
-const filterButtons = [...document.querySelectorAll('[data-filter]')];
-const projectCards = [...document.querySelectorAll('.work-catalog-grid .work-card')];
-filterButtons.forEach(button => button.addEventListener('click', () => {
-  const filter = button.dataset.filter;
-  filterButtons.forEach(item => {
-    const active = item === button;
-    item.classList.toggle('is-active', active);
-    item.setAttribute('aria-pressed', String(active));
+document.querySelectorAll('[data-work-carousel]').forEach(section => {
+  const track = section.querySelector('.work-catalog-grid');
+  const cards = [...track.querySelectorAll('.work-card')];
+  const previous = section.querySelector('[data-work-prev]');
+  const next = section.querySelector('[data-work-next]');
+  const current = section.querySelector('[data-work-current]');
+  const progress = section.querySelector('.work-group-progress span');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  let active = 0;
+  let scheduled = false;
+  const update = () => {
+    const left = track.getBoundingClientRect().left;
+    active = cards.reduce((best, card, index) => {
+      const distance = Math.abs(card.getBoundingClientRect().left - left);
+      return distance < best.distance ? { index, distance } : best;
+    }, { index: 0, distance: Infinity }).index;
+    current.textContent = String(active + 1).padStart(2, '0');
+    previous.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+    progress.style.transform = `translateX(${active * 100}%)`;
+    scheduled = false;
+  };
+  const goTo = index => {
+    const card = cards[Math.max(0, Math.min(cards.length - 1, index))];
+    const left = card.getBoundingClientRect().left - track.getBoundingClientRect().left + track.scrollLeft;
+    track.scrollTo({ left, behavior: reducedMotion.matches ? 'instant' : 'smooth' });
+  };
+  track.addEventListener('scroll', () => {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(update);
+  }, { passive: true });
+  track.addEventListener('keydown', event => {
+    if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+    event.preventDefault();
+    goTo(active + (event.key === 'ArrowRight' ? 1 : -1));
   });
-  projectCards.forEach(card => {
-    card.hidden = filter !== 'all' && !card.dataset.category.split(',').includes(filter);
-  });
-}));
+  previous.addEventListener('click', () => goTo(active - 1));
+  next.addEventListener('click', () => goTo(active + 1));
+  addEventListener('resize', update, { passive: true });
+  update();
+});
 
 const gallery = document.querySelector('#selected-gallery');
 if (gallery) {
