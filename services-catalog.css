@@ -3,22 +3,23 @@
 /* The logo lives behind the bento glass; the pricing blueprint is drawn as vectors. */
 .services-rework{--paper:#e9e6e2}
 .services-rework .svc-hero{position:relative;isolation:isolate;overflow:hidden;display:flex;align-items:center;min-height:calc(100svh - var(--header-height));padding:clamp(22px,3vw,48px) 0;background:radial-gradient(ellipse at 62% 45%,#342d31 0%,#252326 45%,#1b1b1e 82%)}
-.services-rework .svc-hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#09090b42,transparent 32%,#09090b12 72%,#09090b44),radial-gradient(ellipse at 50% 95%,#ee13491e,transparent 62%)}
-.svc-hero-logo.kinetic-scene{inset:-7% 3% -8% 11%;z-index:0;opacity:.95;mask-image:radial-gradient(ellipse at 55% 49%,#000 43%,#000c 65%,transparent 91%)}
+.services-rework .svc-hero::after{content:"";position:absolute;inset:-12%;z-index:0;pointer-events:none;background:radial-gradient(ellipse 35% 46% at 24% 82%,#ee134982 0%,#ad194958 38%,transparent 78%),radial-gradient(ellipse 43% 52% at 77% 32%,#f12b6073 0%,#9e1c493c 43%,transparent 80%),radial-gradient(ellipse 30% 35% at 62% 80%,#dd1b5154 0%,transparent 76%);filter:blur(18px);animation:svc-hero-ambient 16s ease-in-out infinite alternate}
+@keyframes svc-hero-ambient{0%{transform:translate3d(-3%,2%,0) scale(1.02)}50%{transform:translate3d(3%,-2%,0) scale(1.07)}100%{transform:translate3d(-1%,3%,0) scale(1.04)}}
+.svc-hero-logo.kinetic-scene{inset:-7% 3% -8% 11%;z-index:1;opacity:.95;mask-image:radial-gradient(ellipse at 55% 49%,#000 43%,#000c 65%,transparent 91%)}
 .svc-hero-logo .kinetic-fallback{width:100%;right:0;opacity:.18;filter:grayscale(1)}
 .svc-hero-content{position:relative;z-index:2}
 .svc-hero-main{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1.18fr);gap:clamp(12px,1.4vw,24px);min-height:clamp(540px,74svh,720px)}
 .svc-hero-copy,.svc-route{position:relative;overflow:hidden;border:1px solid #ffffff2b;border-radius:clamp(15px,1.4vw,22px);-webkit-backdrop-filter:blur(12px) saturate(.8);backdrop-filter:blur(12px) saturate(.8);box-shadow:inset 0 1px 0 #ffffff17,0 22px 50px #0003;font-family:'Fira Sans Condensed',sans-serif}
 .svc-hero-copy::before,.svc-route::before{content:"";position:absolute;top:0;left:8%;right:30%;height:1px;pointer-events:none;background:linear-gradient(90deg,transparent,#ffffff54 45%,transparent)}
 .svc-hero-copy{display:flex;flex-direction:column;justify-content:space-between;min-width:0;padding:clamp(25px,3.5vw,56px)}
-.svc-hero-copy{background:linear-gradient(145deg,#262124c9,#171619e3 78%)}
+.svc-hero-copy{background:linear-gradient(145deg,#211b1fbd,#141216d4 78%)}
 .svc-hero-top{color:#d8cdd1;letter-spacing:.18em;font-weight:600}
 .svc-hero-idea{position:absolute;z-index:0;top:clamp(20px,3vw,48px);right:clamp(20px,3vw,48px);width:clamp(140px,12vw,210px);height:auto;aspect-ratio:1;object-fit:contain;pointer-events:none;filter:drop-shadow(0 14px 30px #ed174536)}
 .svc-hero-copy-bottom{position:relative;z-index:1}
 .svc-hero-copy h1{font-size:clamp(61px,6.2vw,110px);line-height:.82;letter-spacing:-.045em;margin:0 0 clamp(26px,2.6vw,42px);max-width:680px;text-transform:uppercase;text-wrap:balance}
 .svc-hero-copy p{font-size:clamp(17px,1.3vw,22px);line-height:1.48;max-width:510px;margin:0;color:#dcd5d8;text-wrap:pretty}
 .svc-routes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:repeat(2,minmax(0,1fr));gap:clamp(12px,1.4vw,24px)}
-.svc-route{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;min-width:0;padding:clamp(22px,2.1vw,36px);background:linear-gradient(150deg,#2a2428a8,#171619d1 78%);transition:border-color .28s ease,background-color .28s ease,box-shadow .28s ease}
+.svc-route{display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;min-width:0;padding:clamp(22px,2.1vw,36px);background:linear-gradient(150deg,#211a2099,#131116bf 78%);transition:border-color .28s ease,background-color .28s ease,box-shadow .28s ease}
 .svc-route:hover,.svc-route:focus-visible,.svc-route.is-active{border-color:#ffffff66;background-color:#28151d52;box-shadow:inset 0 1px 0 #ffffff2c,0 22px 50px #0003}
 .svc-route-id{position:relative;z-index:1;color:#f06184;margin:0;letter-spacing:.16em}
 .svc-route-icon{position:absolute;z-index:0;top:clamp(14px,1.45vw,24px);right:clamp(14px,1.45vw,24px);width:clamp(90px,8.3vw,145px);height:auto;aspect-ratio:1;object-fit:contain;pointer-events:none;opacity:.91;filter:brightness(1.08) drop-shadow(0 10px 18px #eb17402e);transition:transform .45s ease,opacity .45s ease}
@@ -133,8 +134,7 @@
 .svc-category#brand .svc-category-grid{padding-bottom:clamp(35px,4vw,65px)}
 .svc-brand-cases{margin-top:0}
 .svc-brand-cases .svc-project-image img{aspect-ratio:1}
-.svc-brand-cases .svc-cases-progress span{width:33.333%}
-@media(min-width:1081px){.svc-brand-cases .svc-cases-nav,.svc-brand-cases .svc-cases-progress{display:none}.svc-brand-cases .svc-cases-footer{justify-content:flex-end}}
+.svc-brand-cases .svc-cases-progress span{width:25%}
 
 .services-rework .svc-catalog{padding-top:clamp(24px,3vw,48px)}
 .svc-category{scroll-margin-top:20px}
@@ -263,7 +263,7 @@
   .svc-project-identity h3{font-size:27px}
 }
 @media(max-width:350px){.svc-routes{gap:8px}.svc-route{padding:12px}.svc-route-icon{width:104px}.svc-route-bottom{inset:auto 12px 12px;gap:3px}.svc-route strong{font-size:19px}.svc-route[data-service-index="3"] strong{font-size:17px}.svc-route .svc-route-short{font-size:10px;min-height:0}.svc-route-price{padding-top:4px}.svc-web-offer{padding:20px}.svc-web-main h3{font-size:37px}.svc-web-facts{grid-template-columns:1fr 1fr}}
-@media(prefers-reduced-motion:reduce){.svc-route,.svc-route-icon,.svc-cases-arrow,.svc-cases-progress span,.svc-web-details summary span{transition:none}.svc-blueprint{transform:none;will-change:auto}.svc-blueprint::before,.svc-blueprint::after{animation:none}}
+@media(prefers-reduced-motion:reduce){.svc-route,.svc-route-icon,.svc-cases-arrow,.svc-cases-progress span,.svc-web-details summary span{transition:none}.svc-blueprint{transform:none;will-change:auto}.svc-blueprint::before,.svc-blueprint::after,.services-rework .svc-hero::after{animation:none}}
 
 /* Editorial services: one paper canvas with a dark opening composition. */
 .services-rework{--paper:#ece9e5;background:var(--paper)}
